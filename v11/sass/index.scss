@@ -7,13 +7,16 @@
  */
 
 @charset "utf-8";
-$font-normal:#999;
-$bg-normal:#181a1d;
+$font-normal:#888;
+$bg-normal:#fff;
 * {
   margin: 0;
   padding: 0;
 }
-
+%wrap{
+  width: 100%;
+  overflow: hidden;
+}
 html {
   font-family:  "Helvetica Neue", Helvetica,"Microsoft Yahei", STHeiTi, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
@@ -55,4 +58,32 @@ img {
 
 li {
   list-style-type: none;
+}
+
+.box-wrap{
+  @extend %wrap;
+}
+.head{
+  height: 95px;
+  background: #f6a424;
+  overflow: hidden;
+}
+.head-left{
+  float: left;
+  width: 30%;
+  height: 95px;
+}
+.head-right{
+  position: relative;
+  float: right;
+  width: 70%;
+  height: 95px;
+}
+.pic-wrap{
+  margin: 12px auto;
+  width: 66px;
+  height: 66px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
 }
