@@ -7,8 +7,8 @@
  */
 
 @charset "utf-8";
-$icon-spacing:20px;
-@import "icon/*.png";
+/*$icon-spacing:20px;
+@import "icon*//*.png";*/
 $font-normal:#888;
 $bg-normal:#fff;
 * {
@@ -86,7 +86,8 @@ li {
       right: 9px;
       width: 18px;
       height: 18px;
-      @include icon-sprite(set);
+      //@include icon-sprite(set);
+      background: url(../img/icon/set.png) 0 0 no-repeat;
       background-size: 100%;
         a{
           height: 18px;
@@ -173,6 +174,7 @@ li {
   width: 93.75%;
   overflow: hidden;
   li {
+
         float: left;
         width: 33%;
         height: 110px;
@@ -208,18 +210,58 @@ li {
       font-size: 1.2em;
       text-align: center;
     }
+    .number{
+      position: absolute;
+      top: -9px;
+      right: -2px;
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      background: #f7774a;
+      border-radius: 50%;
+      font-size: 1em;
+      color: #ffffff;
+    }
 }
 .function-item-logo{
+  position: relative;
   margin: 13px auto 0 auto;
   width: 66px;
   height: 66px;
   border-radius: 50%;
 }
 .foot{
+  position: relative;
+  margin: 0 auto;
+  width: 93.75%;
   height: 36px;
   line-height: 36px;
   font-size: 1em;
   text-align: center;
   color: #dfdfdf;
   border-top: 1px solid #f6f6f6;
+    .message{
+      margin-top: 10px;
+      float: left;
+      width: 16px;
+      height: 15px;
+      background: url(../img/icon/msg.png) 0 0 no-repeat;
+      background-size: 100%;
+      overflow: hidden;
+    }
+    .number{
+      position: absolute;
+      top: 0;
+      left: 12px;
+      padding: 1px;
+      width: 14px;
+      height: 14px;
+      line-height: 14px;
+      text-align: center;
+      background: #f7774a;
+      border-radius: 50%;
+      font-size: 6px;
+      color: #ffffff;
+    }
 }
