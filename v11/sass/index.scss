@@ -7,6 +7,7 @@
  */
 
 @charset "utf-8";
+@import "icon/*.png";
 $font-normal:#888;
 $bg-normal:#fff;
 * {
@@ -18,7 +19,7 @@ $bg-normal:#fff;
   overflow: hidden;
 }
 html {
-  font-family:  "Helvetica Neue", Helvetica,"Microsoft Yahei", STHeiTi, Arial, sans-serif;
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: 62.5%;
@@ -78,6 +79,40 @@ li {
   float: right;
   width: 70%;
   height: 95px;
+    .head-right-set{
+      position: absolute;
+      top: 9px;
+      right: 9px;
+      width: 18px;
+      height: 18px;
+      @include icon-sprite(set);
+      background-size: 100%;
+    }
+    .head-shop-tt{
+      margin-top: 18px;
+      font-size: 1.6em;
+      color: #ffffff;
+    }
+    .shop-level{
+      margin-top: 12px;
+      width: 82px;
+      height: 22px;
+      line-height: 22px;
+      background: #f7774a;
+      border-radius: 8px;
+      overflow: hidden;
+        .wz{
+          padding-left: 5px;
+          color: #ffffff;
+          float: left;
+        }
+        .img{
+          margin: 2px 5px 0 5px;
+          float: left;
+          width: 16px;
+          overflow: hidden;
+        }
+    }
 }
 .pic-wrap{
   margin: 12px auto;
@@ -86,4 +121,41 @@ li {
   border: 3px solid #fff;
   border-radius: 50%;
   overflow: hidden;
+}
+.income{
+  height: 52px;
+  background: #f8b650;
+}
+.income-list{
+  overflow: hidden;
+    li {
+      margin-top: 7px;
+      float: left;
+      width: 32.34375%;
+      height: 38px;
+      color: #ffffff;
+      text-align: center;
+        &:nth-of-type(1){
+          border-right: 1px solid #f9c573;
+        }
+        &:nth-of-type(2){
+          border-left: 1px solid #eca940;
+          border-right: 1px solid #f9c573;
+        }
+        &:nth-of-type(3){
+          border-left: 1px solid #eca940;
+        }
+        em{
+          font-size: 1.5em;
+          font-weight: bold;
+          display: block;
+          text-shadow: 1px 1px 2px #dca147;
+        }
+        i{
+          font-size: 1em;
+          display: block;
+        }
+    }
+    .income-list-mid{
+      width: 33.90625%;}
 }
