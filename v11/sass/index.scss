@@ -11,6 +11,7 @@
 @import "icon*//*.png";*/
 $font-normal:#888;
 $bg-normal:#fff;
+
 * {
   margin: 0;
   padding: 0;
@@ -83,12 +84,13 @@ li {
     .head-right-set{
       position: absolute;
       top: 9px;
-      right: 9px;
-      width: 18px;
-      height: 18px;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
       //@include icon-sprite(set);
-      background: url(../img/icon/set.png) 0 0 no-repeat;
-      background-size: 100%;
+      background: #ef9a16 url(../img/icon/set.png) 50% no-repeat;
+      background-size: 70%;
         a{
           height: 18px;
           display: block;}
@@ -118,6 +120,31 @@ li {
           overflow: hidden;
         }
     }
+    .message{
+      position: absolute;
+      top: 45px;
+      right: 0;
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      background: #ef9a16 url(../img/icon/msg.png) 50% no-repeat;
+      background-size: 70%;
+      overflow: hidden;
+    }
+    .number{
+      position: absolute;
+      top: 36px;
+      right: 0;
+      padding: 1px;
+      width: 14px;
+      height: 14px;
+      line-height: 14px;
+      text-align: center;
+      background: #f7774a;
+      border-radius: 50%;
+      font-size: 6px;
+      color: #ffffff;
+    }
 }
 .pic-wrap{
   margin: 12px auto;
@@ -137,7 +164,7 @@ li {
       margin-top: 7px;
       float: left;
       width: 32.34375%;
-      height: 38px;
+      //height: 38px;
       color: #ffffff;
       text-align: center;
         &:nth-of-type(1){
@@ -174,12 +201,15 @@ li {
   width: 93.75%;
   overflow: hidden;
   li {
-
+        padding: 14px 0;
         float: left;
         width: 33%;
-        height: 110px;
         border-right: 1px solid #f6f6f6;
         border-bottom: 1px solid #f6f6f6;
+        &:nth-of-type(3),
+        &:nth-of-type(6){
+          border-right: 0 none;
+        }
           &:nth-of-type(1) .function-item-logo{
             background: #f77171 url(../img/icon/item1.png) center center no-repeat;
             background-size: 50%;
@@ -189,7 +219,7 @@ li {
             background-size: 50%;
           }
           &:nth-of-type(3) .function-item-logo{
-            background: #ffc13d url(../img/icon/item3.png) center center no-repeat;
+            background: #ffc13d url(../img/icon/item3.png) 55% center no-repeat;
             background-size: 50%;
           }
           &:nth-of-type(4) .function-item-logo{
@@ -197,11 +227,11 @@ li {
             background-size: 50%;
           }
           &:nth-of-type(5) .function-item-logo{
-            background: #b88feb url(../img/icon/item2.png) center center no-repeat;
+            background: #b88feb url(../img/icon/item5.png) center center no-repeat;
             background-size: 50%;
           }
           &:nth-of-type(6) .function-item-logo{
-            background: #f976d3 url(../img/icon/item5.png) center center no-repeat;
+            background: #eee url(../img/icon/item2.png) center center no-repeat;
             background-size: 50%;
           }
     }
@@ -226,7 +256,7 @@ li {
 }
 .function-item-logo{
   position: relative;
-  margin: 13px auto 0 auto;
+  margin: 0 auto;
   width: 66px;
   height: 66px;
   border-radius: 50%;
@@ -241,27 +271,85 @@ li {
   text-align: center;
   color: #dfdfdf;
   border-top: 1px solid #f6f6f6;
-    .message{
-      margin-top: 10px;
-      float: left;
-      width: 16px;
-      height: 15px;
-      background: url(../img/icon/msg.png) 0 0 no-repeat;
-      background-size: 100%;
-      overflow: hidden;
+
+}
+
+@media screen and (min-width: 768px) {
+  .head,
+  .head-left,
+  .head-right{
+    height: 230px;
+  }
+  .pic-wrap{
+    margin: 30px auto;
+    width: 158px;
+    height: 158px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .head-right {
+      .head-shop-tt{
+        margin-top: 60px;
+        font-size: 3.4em;
+        color: #ffffff;
+      }
+      .shop-level{
+        width: 195px;
+        height: 52px;
+        line-height: 52px;
+          .wz{
+            padding-left: 14px;
+            font-size: 2.6em;
+          }
+          .img{
+            margin: 8px 27px 0 12px;
+            width: auto;
+          }
+      }
+      .head-right-set{
+        top: 35px;
+        width: 60px;
+        height: 60px;
+      }
+      .message{
+        top: 112px;
+        width: 60px;
+        height: 60px;
+      }
+      .number{
+        top: 100px;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+      }
+  }
+  .income{
+    height: 126px;
+  }
+  .income-list{
+    li{
+      margin-top: 20px;
+        em{
+          font-size: 3em;
+        }
+        i{
+          font-size: 2.2em;
+        }
     }
+  }
+  .function-item{
     .number{
-      position: absolute;
-      top: 0;
-      left: 12px;
-      padding: 1px;
-      width: 14px;
-      height: 14px;
-      line-height: 14px;
-      text-align: center;
-      background: #f7774a;
-      border-radius: 50%;
-      font-size: 6px;
-      color: #ffffff;
+      width: 64px;
+      height: 64px;
+      line-height: 64px;
+      font-size: 2.2em;
     }
+    h3{
+      font-size: 2.6em;}
+  }
+  .function-item-logo{
+    width: 156px;
+    height: 156px;
+  }
 }
