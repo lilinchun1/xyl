@@ -192,11 +192,11 @@ li {
       width: 33.90625%;}
 }
 .function-wrap{
-  padding-top: 34px;
+  padding-top: 16px;
   @extend %wrap;
 }
 .function-item{
-  padding-bottom: 34px;
+  padding-bottom: 18px;
   margin: 0 auto;
   width: 93.75%;
   overflow: hidden;
@@ -210,6 +210,11 @@ li {
         &:nth-of-type(6){
           border-right: 0 none;
         }
+    &:nth-of-type(4),
+    &:nth-of-type(5),
+    &:nth-of-type(6){
+      border-bottom: 0 none;
+    }
           &:nth-of-type(1) .function-item-logo{
             background: #f77171 url(../img/icon/item1.png) center center no-repeat;
             background-size: 50%;
@@ -351,5 +356,8 @@ li {
   .function-item-logo{
     width: 156px;
     height: 156px;
+  }
+  .foot{
+    font-size: 2em;
   }
 }
