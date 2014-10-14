@@ -559,3 +559,34 @@ li {
 
     }
 }
+
+@media screen and (min-width: 768px){
+  .management-head{
+    .pic-wrap{
+      border-width: 3px;
+      box-shadow: 1px 2px 3px #bebebe;
+    }
+    .class{
+      font-size: 2em;
+    }
+    .head-right .shop-level .img{
+      margin: 0;
+      padding: 0 6px;
+    }
+    .head-right .shop-level{
+      margin-top: 12px;
+      padding: 4px 6px;
+      height: 24px;
+      line-height: 24px;
+    }
+  }
+  .management-con{
+    padding: 15px 0;}
+  .management-list{
+      li{
+        height: 64px;
+        line-height: 64px;
+        font-size: 2em;
+      }
+  }
+}
