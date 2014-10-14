@@ -87,7 +87,7 @@ li {
       right: 0;
       width: 25px;
       height: 25px;
-      border-radius: 5px;
+      border-radius: 4px;
       //@include icon-sprite(set);
       background: #ef9a16 url(../img/icon/set.png) 50% no-repeat;
       background-size: 70%;
@@ -106,10 +106,10 @@ li {
       height: 22px;
       line-height: 22px;
       background: #f7774a;
-      border-radius: 8px;
+      border-radius: 4px;
       overflow: hidden;
         .wz{
-          padding-left: 5px;
+          padding-left: 8px;
           color: #ffffff;
           float: left;
         }
@@ -126,7 +126,7 @@ li {
       right: 0;
       width: 25px;
       height: 25px;
-      border-radius: 5px;
+      border-radius: 4px;
       background: #ef9a16 url(../img/icon/msg.png) 50% no-repeat;
       background-size: 70%;
       overflow: hidden;
@@ -291,7 +291,6 @@ li {
     height: 158px;
     border: 6px solid #fff;
     border-radius: 50%;
-    overflow: hidden;
   }
   .head-right {
       .head-shop-tt{
@@ -352,6 +351,33 @@ li {
     }
     h3{
       font-size: 2.6em;}
+    li{
+        &:nth-of-type(1) .function-item-logo{
+          background: #f77171 url(../img/icon/item1.png) center center no-repeat;
+          background-size: auto;
+        }
+        &:nth-of-type(2) .function-item-logo{
+          background: #92cf68 url(../img/icon/item2.png) center center no-repeat;
+          background-size: auto;
+        }
+        &:nth-of-type(3) .function-item-logo{
+          background: #ffc13d url(../img/icon/item3.png) 55% center no-repeat;
+          background-size: auto;
+        }
+        &:nth-of-type(4) .function-item-logo{
+          background: #02b8cd url(../img/icon/item4.png) center center no-repeat;
+          background-size: auto;
+        }
+        &:nth-of-type(5) .function-item-logo{
+          background: #b88feb url(../img/icon/item5.png) center center no-repeat;
+          background-size: auto;
+        }
+        &:nth-of-type(6) .function-item-logo{
+          background: #eee url(../img/icon/item2.png) center center no-repeat;
+          background-size: auto;
+        }
+    }
+
   }
   .function-item-logo{
     width: 156px;
