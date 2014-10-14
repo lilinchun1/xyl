@@ -653,3 +653,39 @@ li {
       background: #f6a424;
     }
 }
+.my-team-tt {
+  margin: 0 auto;
+  @extend %show-wrap;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+  color: $font-color-666;
+}
+.my-team-list{
+  margin: 0 auto;
+  @extend %show-wrap;
+  @include item-wrap-mod(#fff, $bd-color-f3);
+    li{
+      margin: 0 10px;
+      height: 58px;
+      border-bottom: 1px solid $bd-color-f3;
+      overflow: hidden;
+    }
+    p{
+      margin-top: 8px;
+    }
+    .mgt4{
+      margin-top: 4px;
+    }
+}
+.my-team-list-pic{
+  float: left;
+  margin-top: 6px;
+  margin-right: 22px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 1px 2px 2px #bebebe;
+  overflow: hidden;
+}
