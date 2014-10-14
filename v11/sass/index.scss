@@ -582,11 +582,13 @@ li {
   }
   .management-con{
     padding: 15px 0;}
-  .management-list{
-      li{
-        height: 64px;
-        line-height: 64px;
-        font-size: 2em;
-      }
+  .management-list {
+    li {
+      height: 64px;
+      line-height: 64px;
+      font-size: 2em;
+    }
   }
+  .mod-line{
+    height: 21px;}
 }
