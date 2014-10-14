@@ -30,6 +30,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -397,6 +398,7 @@ li {
 
 /*management-team.html*/
 .management-team-wrap{
+  height: 100%;
   background: #f6f7f7;
   overflow: hidden;
 }
@@ -433,35 +435,68 @@ li {
 }
 .team-item-data{
   margin: 7px auto;
-  width: 84%;
   overflow: hidden;
     h2{
+      padding-left: 8%;
       margin-top: 5px;
       font-size: 1.2em;
       color: $font-color2;
     }
-    p{
+    p {
       margin: 6px 0 5px;
+      padding-left: 8%;
+      height: 20px;
+      line-height: 20px;
       font-size: 1em;
       color: $font-normal;
+      overflow: hidden;
     }
-    span{
+    span {
+      float: left;
+      padding-left: 7px;
       font-size: 1.4em;
       font-weight: bold;
     }
+    em{
+      float: left;}
 }
 .team-item-data-left{
   width: 49.6%;
   float: left;
   border-right: 1px solid $bd-color;
+  h2 {
+    padding-left: 17%;
+  }
+  p {
+    padding-left: 17%;
+  }
 }
 .team-item-data-right {
   width: 50%;
   float: right;
-  text-indent: 12px;
 }
 /*文字颜色 */
 .font-yellow{
   color: #f6a424;}
-.font-font-green{
+.font-green{
   color: #56952b;}
+
+@media screen and (min-width: 768px){
+  .team-item-tt{
+    height: 68px;
+    line-height: 68px;
+    font-size: 2.6em;
+  }
+  .team-item-data{
+    h2{
+      font-size: 2em;
+    }
+    p{
+      height: 40px;
+      line-height: 40px;
+      font-size: 2em;
+    }
+    span{
+      padding-left: 20px;}
+  }
+}
