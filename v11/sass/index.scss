@@ -592,3 +592,64 @@ li {
   .mod-line{
     height: 21px;}
 }
+
+/*management-my.html*/
+.management-my-wrap{
+  @extend %full-height;
+}
+.my-wrap-item{
+  .wenhao {
+    margin: 9px 6px 0 0;
+    float: right;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    background: #f7774a;
+    border-radius: 50%;
+  }
+   .team-item-data-left{
+      h2{
+        padding-left: 22%;
+      }
+      p{
+        padding-left: 26%;
+      }
+  }
+   .team-item-data-right{
+     h2{
+       padding-left: 18%;
+     }
+     p{
+       padding-left: 22%;
+     }
+   }
+}
+.management-my-btns{
+  margin: 12px auto;
+  @extend %show-wrap;
+    .left-btn,
+    .right-btn{
+      width: 45%;
+      height: 30px;
+      border: 0 none;
+      border-radius: 4px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #ffffff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+    }
+    .left-btn{
+      float: left;
+      background: #dd2f2f;
+    }
+    .right-btn{
+      float: right;
+      background: #f6a424;
+    }
+}
