@@ -12,7 +12,8 @@ $font-normal-999:#999;
 $font-color-333:#333;
 $font-color-666:#666;
 $bg-normal:#fff;
-$bd-color-f3:#f3f3f3;
+$bd-color-f3:#eee;
+
 * {
   margin: 0;
   padding: 0;
@@ -116,10 +117,10 @@ li {
   height: 95px;
     .head-right-set{
       position: absolute;
-      top: 9px;
+      top: 12px;
       right: 0;
-      width: 25px;
-      height: 25px;
+      width: 32px;
+      height: 30px;
       border-radius: 4px;
       //@include icon-sprite(set);
       background: #ef9a16 image-url("icon/set.png") 50% no-repeat;
@@ -155,10 +156,10 @@ li {
     }
     .message{
       position: absolute;
-      top: 45px;
+      top: 52px;
       right: 0;
-      width: 25px;
-      height: 25px;
+      width: 32px;
+      height: 30px;
       border-radius: 4px;
       background: #ef9a16 image-url("icon/msg.png") 50% no-repeat;
       background-size: 70%;
@@ -166,7 +167,7 @@ li {
     }
     .number{
       position: absolute;
-      top: 36px;
+      top: 45px;
       right: 0;
       padding: 1px;
       width: 14px;
@@ -237,8 +238,8 @@ li {
         padding: 14px 0;
         float: left;
         width: 33%;
-        border-right: 1px solid #f6f6f6;
-        border-bottom: 1px solid #f6f6f6;
+        border-right: 1px solid $bd-color-f3;
+        border-bottom: 1px solid $bd-color-f3;
         &:nth-of-type(3),
         &:nth-of-type(6){
           border-right: 0 none;
@@ -308,7 +309,7 @@ li {
   font-size: 1em;
   text-align: center;
   color: #dfdfdf;
-  border-top: 1px solid #f6f6f6;
+  border-top: 1px solid $bd-color-f3;
 
 }
 
