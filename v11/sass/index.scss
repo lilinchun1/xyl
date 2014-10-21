@@ -1593,3 +1593,14 @@ button{
     }
   }
 }
+.indent-show-none{
+  min-height: 260px;
+  background: url(../../v11/img/icon/bg-none-s.png) 50% 50% no-repeat;
+}
+
+@media screen and (min-width: 768px){
+  .indent-show-none{
+    min-height: 520px;
+    background: url(../../v11/img/icon/bg-none.png) 50% 50% no-repeat;
+  }
+}
