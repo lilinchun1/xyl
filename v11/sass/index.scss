@@ -1454,3 +1454,77 @@ button{
   background: transparent;
   color: $font-normal-999;
 }
+
+@media screen and (min-width: 768px) {
+  .indent-tool{
+    height: 80px;
+  }
+  .indent-tool-list{
+    li{
+      margin-top: 16px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 2.2em;
+    }
+    .red-ball {
+      top: -4px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 0.7em;
+    }
+  }
+  .indent-state{
+    .indent-number{
+      height: 80px;
+      line-height: 80px;
+      font-size: 2.2em;
+    }
+    .total {
+      height: 72px;
+      line-height: 72px;
+      font-size: 2.2em;
+    }
+    .add-more{
+      height: 50px;
+        span{
+          margin-left: -24px;
+          background: sprite($icon, down-btn);
+          @include sprite-dimensions($icon, down-btn)
+        }
+    }
+    .up-btn{
+      span{
+        background: sprite($icon, up-btn);
+        @include sprite-dimensions($icon, up-btn)
+      }
+    }
+  }
+  .indent-item-list{
+      li{
+        height: 162px;
+          h3,p{
+            margin-top: 10px;
+            font-size: 2.2em;
+          }
+      }
+      .indent-item-pic{
+        margin-top: 16px;
+        margin-right: 22px;
+        width: 126px;
+        height: 126px;
+      }
+  }
+  .indent-btns{
+    height: 56px;
+      .left-btn,.right-btn{
+        height: 56px;
+        font-size: 2.1em;
+      }
+  }
+  .chankan-more-btn{
+    margin: 20px auto 40px;
+    height: 54px;
+  }
+}
