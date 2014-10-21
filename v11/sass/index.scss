@@ -7,8 +7,25 @@
  * To change this template use File | Settings | File Templates. 
  */
 
-/*$icons-spacing:10px;
-@import "icons*//*.png";*/
+
+@import "compass/utilities/sprites";         // Include compass sprite helpers
+@import "compass/css3/background-size";      // Include helper to calc background size
+
+$icon: sprite-map("icon/*.png", $spacing: 20px);
+$level: sprite-map("level/*.png", $spacing: 20px);
+
+@mixin responsive-sprite($pas,$clas,$name) {
+  $iconname: "#{$pas}/#{$name}.png";
+  $iconwidth: round(image-width($iconname)/2);
+  $iconheight: round(image-height($iconname)/2);
+  $pos: sprite-position($clas, $name);
+  $posx: round(nth($pos, 1)/2);
+  $posy: round(nth($pos, 2)/2);
+  width: $iconwidth;
+  height: $iconheight;
+  background: sprite-url($clas) $posx $posy no-repeat;
+  @include background-size(round(image-width(sprite-path($clas)) / 2) round(image-height(sprite-path($clas)) / 2));
+};
 
 $font-normal-999:#999;
 $font-color-333:#333;
@@ -124,12 +141,12 @@ li {
       width: 32px;
       height: 30px;
       border-radius: 4px;
-      //@include icon-sprite(set);
-      background: #ef9a16 image-url("icon/set.png") 50% no-repeat;
-      background-size: 70%;
+      background: #ef9a16 6px;
         a{
-          height: 18px;
-          display: block;}
+          margin: 6px 0 0 8px;
+          display: block;
+          @include responsive-sprite (icon,$icon,set);
+        }
     }
     .head-shop-tt{
       margin-top: 18px;
@@ -150,10 +167,12 @@ li {
           float: left;
         }
         .img{
-          margin: 2px 5px 0 5px;
+          margin: 5px 5px 0 5px;
           float: left;
           width: 16px;
           overflow: hidden;
+          display: block;
+          @include responsive-sprite(level, $level, level1)
         }
     }
     .message{
@@ -163,9 +182,13 @@ li {
       width: 32px;
       height: 30px;
       border-radius: 4px;
-      background: #ef9a16 image-url("icon/msg.png") 50% no-repeat;
-      background-size: 70%;
+      background: #ef9a16;
       overflow: hidden;
+        a{
+          margin: 6px 0 0 8px;
+          display: block;
+          @include responsive-sprite(icon,$icon,msg);
+        }
     }
     .number{
       position: absolute;
