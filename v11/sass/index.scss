@@ -97,6 +97,8 @@ body {
 a {
   color: $font-normal-999;
   text-decoration: none;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
@@ -121,7 +123,11 @@ img {
 li {
   list-style-type: none;
 }
-
+button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 /*index.html*/
 .box-wrap {
   @extend %wrap;
@@ -1323,6 +1329,7 @@ li {
 }
 
 .indent-state{
+  padding-bottom: 10px;
   margin-top: 18px;
   @include item-wrap-mod($bg-normal, $bd-color-f3);
     .indent-number {
@@ -1362,6 +1369,23 @@ li {
   }
   .add-more{
     height: 25px;
+    a{
+      display: block;
+    }
+      span {
+        position: relative;
+        top: 0;
+        left: 50%;
+        margin-left: -12px;
+        display: block;
+        @include responsive-sprite(icon, $icon, down-btn);
+      }
+  }
+  .up-btn{
+    span {
+
+      @include responsive-sprite(icon, $icon, up-btn);
+    }
   }
 }
 .indent-item-list{
@@ -1394,4 +1418,39 @@ li {
       border: 1px solid $bd-color-f3;
       overflow: hidden;
     }
+}
+
+.indent-btns{
+  margin: 0 auto;
+  @extend %show-wrap;
+  height: 28px;
+  .left-btn,.right-btn{
+    width: 45%;
+    height: 28px;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-radius: 4px;
+    border: 0 none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .left-btn {
+    float: left;
+    background: #dd2f2f;
+  }
+  .right-btn {
+    float: right;
+    background: #f6a424;
+  }
+}
+.chankan-more-btn {
+  margin: 10px auto 30px;
+  width: 42%;
+  height: 28px;
+  display: block;
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  background: transparent;
+  color: $font-normal-999;
 }
