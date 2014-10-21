@@ -166,6 +166,13 @@ li {
           color: #ffffff;
           float: left;
         }
+        .wz2{
+          margin-top: 7px;
+          padding-left: 8px;
+          color: #ffffff;
+          float: right;
+          @include responsive-sprite(icon, $icon, right-s-line2)
+        }
         .img{
           margin: 5px 5px 0 5px;
           float: left;
@@ -368,20 +375,38 @@ li {
             padding-left: 14px;
             font-size: 2.6em;
           }
+          .wz2{
+            margin-top: 18px;
+            background: sprite($icon, right-s-line2);
+            @include sprite-dimensions($icon,right-s-line2)
+          }
           .img{
-            margin: 8px 27p8 0 12px;
-            width: auto;
+            margin: 15px 0 0 20px;
+            background: sprite($level, level1);
+            @include sprite-dimensions($level,level1)
           }
       }
       .head-right-set{
         top: 35px;
         width: 60px;
         height: 60px;
+          a {
+            margin: 12px 0 0 14px;
+            display: block;
+            background: sprite($icon, set);
+            @include sprite-dimensions($icon,set)
+          }
       }
       .message{
         top: 112px;
         width: 60px;
         height: 60px;
+        a {
+          margin: 12px 0 0 14px;
+          display: block;
+          background: sprite($icon, msg);
+          @include sprite-dimensions($icon,msg)
+        }
       }
       .number{
         top: 100px;
@@ -843,3 +868,15 @@ li {
     height: 19px;
   }
 }
+.schedule-wrap{
+  @extend %wrap;
+  background: $bd-color-f3;
+}
+.schedule-item {
+  margin: 10px auto;
+  @extend %show-wrap;
+  @include item-wrap-mod($bg-normal,$bd-color-f3);
+  height: 100px;
+}
+
+
