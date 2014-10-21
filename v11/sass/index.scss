@@ -1071,3 +1071,81 @@ li {
   background: url(../../v11/img/pop.png) no-repeat rgba(0, 0, 0, 0.7);
   background-size: 100%;
 }
+
+@media screen and (min-width:768px) {
+  .schedule-item-tt{
+    height: 72px;
+    line-height: 72px;
+      em {
+        font-size: 2.2em;
+      }
+      span{
+        margin-top: 8px;
+        width: 34px;
+        height: 24px;}
+  }
+  .s-leve-list{
+    padding-bottom: 15px;
+    height: 20px;
+      span{
+        width: 23px;
+        height: 19px;
+      }
+  }
+  .leve-bar{
+    height: 22px;
+      li{
+        margin-top: 2px;
+        height: 20px;
+      }
+  }
+  .alert-con{
+    margin-top: 19px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 2em;
+  }
+  .level-rule{
+    span{
+      padding: 20px 0;
+      font-size: 2em;
+    }
+  }
+  .join-in-header{
+    height: 120px;
+      .pic-wrap {
+        width: 84px;
+        height: 84px;
+        border-width: 2px;
+      }
+      h2{
+        margin-top: 15px;
+        font-size: 2.2em;
+        overflow: hidden;
+        i{
+          float: left;}
+      }
+      h3 {
+        font-size: 2.0em;
+      }
+      .level-icon{
+        margin-top: 4px;
+        float: left;
+      }
+      .join-in-header-btn{
+        top: 46px;
+        width: 116px;
+        height: 40px;
+        font-size: 2em;
+      }
+  }
+  .join-in-con{
+    p{
+      font-size: 2em;
+    }
+  }
+  .join-in-con-btn{
+    height: 60px;
+    font-size: 2.4em;
+  }
+}
