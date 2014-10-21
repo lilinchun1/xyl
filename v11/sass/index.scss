@@ -28,7 +28,7 @@ $level: sprite-map("level/*.png", $spacing: 20px);
   @include background-size(round(image-width(sprite-path($clas)) / 2) round(image-height(sprite-path($clas)) / 2));
 }
 
-;
+
 
 $font-normal-999: #999;
 $font-color-333: #333;
@@ -1225,7 +1225,7 @@ li {
 
 .indent-tool {
   height: 40px;
-  @include item-wrap-mod($bg-normal, $bd-color-f3)
+  @include item-wrap-mod($bg-normal, $bd-color-f3);
 }
 
 .indent-tool-list {
@@ -1249,6 +1249,8 @@ li {
   }
   .red-ball {
     position: absolute;
+    right: 0;
+    top: -5px;
     width: 16px;
     height: 16px;
     line-height: 16px;
@@ -1260,4 +1262,28 @@ li {
     display: inline-block;
   }
 
+}
+
+.indent-state{
+  margin-top: 18px;
+  @include item-wrap-mod($bg-normal, $bd-color-f3);
+    .indent-number {
+      margin: 0 auto;
+      @extend %show-wrap;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid $bd-color-f3;
+      text-indent: 2px;
+      font-size: 1.2em;
+        em {
+          color: $font-color-666;
+        }
+        i {
+          color: $font-normal-999;
+        }
+        span{
+          float: right;
+          color: #ff6600;
+        }
+    }
 }
