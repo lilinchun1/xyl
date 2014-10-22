@@ -1881,7 +1881,7 @@ button{
   }
   .draw-money-btn {
     height: 52px;
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
   .draw-money-list{
     li{
@@ -1935,5 +1935,112 @@ button{
         padding: 28px 0;
         font-size: 2.2em;
       }
+  }
+}
+
+.apply-cash-wrap{
+  margin: 20px auto;
+  @extend %show-wrap;
+  @include item-wrap-mod($bg-normal,$bd-color-f3);
+    p {
+      margin: 15px auto;
+      @extend %show-wrap;
+    }
+    em {
+      color: $font-color-666;
+      font-size: 1.4em;
+    }
+    i{
+      padding-left: 10px;
+      font-size: 1.6em;
+      color: #dd2f2f;
+      font-weight: bold;
+    }
+    span{
+      font-size: 1.2em;
+      color: #dd2f2f;
+      text-align: center;
+    }
+}
+.apply-cash-input{
+  width: 98%;
+  height: 33px;
+  text-indent: 1em;
+}
+.h100p{
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+.modal{
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  width: 190px;
+  height: 125px;
+  background: #ffffff;
+  display: none;
+    p{
+      margin: 10px 0;
+      text-align: center;
+      color: $font-color-666;
+    }
+}
+.mode-btn{
+  margin: 0 auto;
+  width: 70px;
+  height: 25px;
+  border: 1px solid #dd2f2f;
+  border-radius: 4px;
+  color: $font-normal-999;
+  display: block;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.alert-logo{
+  margin: 20px auto 10px;
+  display: block;
+  @include responsive-sprite(icon,$icon,alert);
+}
+
+@media screen and (min-width: 768px) {
+  .apply-cash-wrap{
+    padding: 30px 0;
+    font-size: 2em;
+  }
+  .apply-cash-input{
+    height: 66px;
+    font-size: 1.4em;
+  }
+  .modal{
+    margin: -125px 0 0 -190px;
+    width: 380px;
+    height: 250px;
+      p{
+        margin: 20px 0;
+        font-size: 2.0em;
+      }
+  }
+  .mode-btn{
+    width: 138px;
+    height: 50px;
+    font-size: 1.4em;
+  }
+  .alert-logo{
+    margin: 40px auto 20px;
+    background: sprite($icon, alert);
+    @include sprite-dimensions($icon, alert)
   }
 }
