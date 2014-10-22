@@ -1638,6 +1638,9 @@ button{
       float: left;
       text-align: center;
     }
+    .active{
+      color: #dd2f2f;
+    }
 }
 .shop-list-item {
   background: #ffffff;
@@ -1742,7 +1745,16 @@ button{
     }
 }
 
+.list-min-heigit{
+  height: 80px;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
+  .list-min-heigit{
+    height: 162px;
+    overflow: hidden;
+  }
   .faq-wrap{
       h2{
         height: 74px;
