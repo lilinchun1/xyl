@@ -1896,3 +1896,44 @@ button{
     }
   }
 }
+.draw-money-show-wrap{
+  margin: 20px auto;
+  @extend %show-wrap;
+  @include item-wrap-mod($bg-normal,$bd-color-f3);
+}
+.draw-money-show-list{
+  margin: 0 auto;
+  @extend %show-wrap;
+    li{
+      padding: 12px 0;
+      border-bottom: 1px solid $bd-color-f3;
+      font-size: 1.4em;
+      color: $font-normal-999;
+      overflow: hidden;
+    }
+    em{
+      width: 36%;
+      display: inline-block;
+      color: $font-color-666;
+    }
+    span{
+      width: 64%;
+      float: right;
+    }
+}
+.red-font{
+  color: #dd2f2f;
+}
+.draw-info{
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 768px) {
+  .draw-money-show-list{
+      li{
+        padding: 28px 0;
+        font-size: 2.2em;
+      }
+  }
+}
