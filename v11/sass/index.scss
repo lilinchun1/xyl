@@ -2014,7 +2014,9 @@ button{
   display: block;
   @include responsive-sprite(icon,$icon,alert);
 }
-
+.yes-logo{
+  @include responsive-sprite(icon,$icon,yes);
+}
 @media screen and (min-width: 768px) {
   .apply-cash-wrap{
     padding: 30px 0;
@@ -2041,6 +2043,39 @@ button{
   .alert-logo{
     margin: 40px auto 20px;
     background: sprite($icon, alert);
-    @include sprite-dimensions($icon, alert)
+    @include sprite-dimensions($icon, alert);
   }
+  .yes-logo{
+    background: sprite($icon, yes);
+    @include sprite-dimensions($icon, yes);
+  }
+}
+
+.apply-cash-info-wrap {
+  margin: 0 auto;
+  @extend %show-wrap;
+  h1 {
+    padding: 22px 0;
+    font-size: 1.6em;
+    text-align: center;
+    color: $font-color-666;
+  }
+  p{
+    padding-bottom: 22px;
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .apply-cash-info-wrap{
+    h1{
+      padding: 44px 0;
+      font-size: 3em;
+    }
+    p{
+      padding-bottom: 44px;
+      font-size: 2em;
+    }
+  }
+
 }
