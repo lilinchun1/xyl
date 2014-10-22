@@ -1769,3 +1769,130 @@ button{
       }
   }
 }
+
+.draw-money-list-wrap{
+  margin: 0 auto;
+  @extend %show-wrap;
+}
+.draw-money-form{
+  margin: 20px auto;
+  width: 70%;
+}
+.select-wrap {
+  position: relative;
+  margin-bottom: 8px;
+  width: 100%;
+  height: 26px;
+  overflow: hidden;
+  border: 1px solid $bd-color-f3;
+  border-radius: 4px;
+  background: #ffffff;
+    .select-draw-con{
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 26px;
+      color: $font-color-666;
+      text-indent: 1em;
+      background-color: transparent;
+      border: 0 none;
+      border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    .logo {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 4px;
+      border-left: 1px solid $bd-color-f3;
+      background: #f9f9f9;
+      span {
+        margin: 7px 0 0 7px;
+        display: block;
+        @include responsive-sprite(icon, $icon, select-logo);
+      }
+    }
+}
+.draw-money-btn{
+  width: 100%;
+  height: 26px;
+  border-radius: 4px;
+  background: #dd2f2f;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 0 none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.draw-money-list{
+  margin: 10px auto;
+  @extend %show-wrap;
+  @include item-wrap-mod($bg-normal,$bd-color-f3);
+    li {
+      margin: 0 auto;
+      height: 56px;
+      @extend %show-wrap;
+      border-bottom: 1px solid $bd-color-f3;
+      color: $font-normal-999;
+      font-size: 1.2em;
+      background: image-url("icon/right-s-line.png") 100% 50% no-repeat;
+      background-size: 7px auto;
+        &:last-of-type{
+          border-bottom: 0 none;
+        }
+    }
+    .draw-money-true{
+      color: $font-color-666;
+    }
+    .draw-money-false {
+      color: #dd2f2f;
+    }
+    p{
+      margin-top: 6px;
+    }
+    i{
+      padding-right: 25px;
+      float: right;
+    }
+}
+@media screen and (min-width: 768px){
+  .select-wrap {
+    height: 52px;
+    .select-draw-con {
+      height: 52px;
+      font-size: 1.8em;
+    }
+    .logo {
+      width: 52px;
+      height: 52px;
+      span {
+        margin: 14px 0 0 14px;
+        background: sprite($icon, select-logo);
+        @include sprite-dimensions($icon, select-logo)
+      }
+    }
+  }
+  .draw-money-btn {
+    height: 52px;
+    font-size: 2.2em;
+  }
+  .draw-money-list{
+    li{
+      height: 112px;
+      font-size: 2.2em;
+      background-size: 13px auto;
+    }
+    i{
+      padding-right: 40px;}
+    p{
+      margin-top: 14px;
+    }
+  }
+}
