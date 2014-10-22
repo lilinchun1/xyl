@@ -2079,3 +2079,24 @@ button{
   }
 
 }
+
+.my-bank-wrap{
+  padding: 14px 0;
+  margin: 0 auto;
+  @extend %show-wrap;
+  @include item-wrap-mod($bg-normal,$bd-color-f3);
+    .bank-logo{
+      margin: 1px 1px 1px 1px;
+      float: left;
+      width: 124px;
+      height: 124px;
+    }
+    p{
+      padding: 8px 0;
+      font-size: 1.4em;
+    }
+}
+.bank-item-btn{
+  margin: 12px auto;
+  @extend %show-wrap;
+}
