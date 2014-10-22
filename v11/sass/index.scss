@@ -1649,6 +1649,7 @@ button{
     border-bottom: 1px solid $bd-color-f3;
     overflow: hidden;
     background: image-url("icon/right-s-line.png") 100% 56% no-repeat;
+    background-size: 7px auto;
   }
   .shop-list-item-number {
     height: 44px;
@@ -1672,4 +1673,87 @@ button{
 }
 .w100p{
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .shop-header{
+    height: 120px;
+      .pic-wrap{
+        margin: 16px 35px 0 22px;
+        width: 84px;
+        height: 84px;
+        border-width: 2px;
+      }
+      h2{
+        margin-top: 20px;
+      }
+      h2,h3{
+        font-size: 2.2em;
+      }
+  }
+  .shop-option{
+    height: 76px;
+    line-height: 76px;
+    font-size: 2.2em;
+    .active{
+      color: #dd2f2f;
+    }
+  }
+  .shop-list-item{
+    .shop-list-item-number{
+      height: 88px;
+      span{
+        padding: 24px 0;
+        margin-top: 6px;
+        font-size: 2.2em;
+      }
+    }
+  }
+
+}
+.faq-wrap{
+  margin: 0 auto;
+  @extend %show-wrap;
+  background: #ffffff;
+  overflow: hidden;
+    h2 {
+      margin: 0 auto;
+      @extend %show-wrap;
+      height: 37px;
+      line-height: 37px;
+      font-size: 1.4em;
+      color: $font-color-333;
+      border-bottom: 1px solid $bd-color-f3;
+    }
+}
+.faq-list{
+  margin: 0 auto;
+  @extend %show-wrap;
+    li{
+      padding: 5% 0;
+      font-size: 1.2em;
+      color: $font-color-666;
+      border-bottom: 1px solid $bd-color-f3;
+      background: image-url("icon/right-s-line.png") 98% 50% no-repeat;
+      background-size: 7px auto;
+        a{
+          display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .faq-wrap{
+      h2{
+        height: 74px;
+        line-height: 74px;
+        font-size: 2.4em;
+      }
+  }
+  .faq-list{
+      li{
+        font-size: 2.2em;
+        background-size: 13px auto;
+      }
+  }
 }
