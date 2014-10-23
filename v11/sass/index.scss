@@ -2545,3 +2545,15 @@ input[type="text"]{
     }
   }
 }
+.show-none{
+  height: 100%;
+  background: image-url("icon2/show-none.png") 50% 20% no-repeat;
+}
+.fixb{
+  position: fixed;
+  bottom: 0;
+}
+.my-team-list-none{
+min-height: 300px;
+  background: #fff image-url("icon2/team-list-none.png") 50% 50% no-repeat;
+}
