@@ -129,6 +129,11 @@ button{
   -moz-appearance: none;
   appearance: none;
 }
+input[type="text"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 /*index.html*/
 .box-wrap {
   width: 100%;
@@ -1548,6 +1553,7 @@ button{
       padding: 14px 0;
       font-size: 1.2em;
       color: $font-normal-999;
+      overflow: hidden;
         em {
           color: $font-color-666;
         }
@@ -1939,29 +1945,29 @@ button{
   }
 }
 
-.apply-cash-wrap{
+.apply-cash-wrap {
   margin: 20px auto;
   @extend %show-wrap;
-  @include item-wrap-mod($bg-normal,$bd-color-f3);
-    p {
-      margin: 15px auto;
-      @extend %show-wrap;
-    }
-    em {
-      color: $font-color-666;
-      font-size: 1.4em;
-    }
-    i{
-      padding-left: 10px;
-      font-size: 1.6em;
-      color: $font-color-red;
-      font-weight: bold;
-    }
-    span{
-      font-size: 1.2em;
-      color: $font-color-red;
-      text-align: center;
-    }
+  @include item-wrap-mod($bg-normal, $bd-color-f3);
+  p {
+    margin: 15px auto;
+    @extend %show-wrap;
+  }
+  em {
+    color: $font-color-666;
+    font-size: 1.4em;
+  }
+  i {
+    padding-left: 10px;
+    font-size: 1.6em;
+    color: $font-color-red;
+    font-weight: bold;
+  }
+  span {
+    font-size: 1.2em;
+    color: $font-color-red;
+    text-align: center;
+  }
 }
 .apply-cash-input{
   width: 99%;
@@ -2169,6 +2175,7 @@ button{
 }
 
 .change-bank-wrap{
+  padding-bottom: 10px;
   margin: 0 auto;
   @extend %show-wrap;
     h2{
@@ -2242,5 +2249,53 @@ button{
     margin-top: 20px;
     height: 72px;
     font-size: 2.1em;
+  }
+}
+.w50p{
+  width: 50%;
+  float: left;
+}
+.balance-wrap{
+  padding: 10px 0;
+  margin: 0 auto;
+  @extend %show-wrap;
+}
+.balance-tool-list{
+  background: #ffffff;
+    li{
+      width: 33.1%;
+    }
+    .red-ball{
+      top: -4px;
+      right: 15px;
+    }
+}
+
+.balance-list{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 100%;
+  background: #ffffff;
+    p{
+      margin: 0 auto;
+      @extend %show-wrap;
+    }
+    .balance-list-p {
+      margin-bottom: 8px;
+      color: $font-color-666;
+        em {
+          padding-right: 18px;
+          float: right;
+          color: $font-color-red;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+  .balance-tool-list{
+    .red-ball{
+      top: -4px;
+      right: 70px;
+    }
   }
 }
