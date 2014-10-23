@@ -28,8 +28,20 @@
     </section>
     <div class="bank-item-btn">
         <button type="button" class="draw-money-btn">修改银行卡</button>
-        <em>申请提现后的账户无法修改银行卡信息，如需修改请在申请前完成！</em>
+    </div>
+    <div class="my-bank-alert" id="J-my-bank-alert">
+        <p>账户异常</p>
+        <p>原因可能是开户人姓名与实际不符，请修改银行卡绑定！</p>
+        <div class="close">x</div>
     </div>
 </div>
+<script>
+    window.onload = function () {
+        var obox = document.getElementById("J-my-bank-alert");
+        obox.onclick = function () {
+            obox.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
