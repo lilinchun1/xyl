@@ -14,6 +14,7 @@
 
 $icon: sprite-map("icon/*.png", $spacing: 20px);
 $level: sprite-map("level/*.png", $spacing: 20px);
+$icon2: sprite-map("icon2/*.png", $spacing: 30px);
 
 @mixin responsive-sprite($pas, $clas, $name) {
   $iconname: "#{$pas}/#{$name}.png";
@@ -2297,5 +2298,139 @@ input[type="text"]{
       top: -4px;
       right: 70px;
     }
+  }
+}
+
+.my-income-wrap{
+  margin: 0 auto;
+  @extend %show-wrap;
+  .div-p1{
+    span {
+      margin: 4px 6px 0 0;
+      float: left;
+      @include responsive-sprite(icon2, $icon2, icon1);
+    }
+  }
+  .div-p2{
+    span{
+      margin: 4px 6px 0 0;
+      float: left;
+      @include responsive-sprite(icon2, $icon2, icon2);
+    }
+  }
+  .icome2{
+    span{
+      margin: 4px 6px 0 0;
+      float: left;
+      @include responsive-sprite(icon2, $icon2, icon3);
+    }
+  }
+  .icome3{
+    span{
+      margin: 4px 6px 0 0;
+      float: left;
+      @include responsive-sprite(icon2, $icon2, icon4);
+    }
+  }
+  .icome4{
+    span{
+      margin: 4px 6px 0 0;
+      float: left;
+      @include responsive-sprite(icon2, $icon2, icon5);
+    }
+  }
+}
+.my-icome-item{
+  margin-top: 10px;
+  padding: 14px 0;
+  @include item-wrap-mod($bg-normal,$bd-color-f3);
+    p{
+      margin: 0 auto;
+      padding: 4px 0;
+      font-size: 1.4em;
+      @extend %show-wrap;
+      color: $font-color-666;
+      overflow: hidden;
+      background: image-url("icon/right-s-line.png") 100% 50% no-repeat;
+      background-size: 7px auto;
+    }
+    .icome1-p{
+      padding-bottom: 15px;
+      border-bottom: 1px solid $bd-color-f3;
+    }
+    .icome1-p2{
+      padding-top: 15px;
+    }
+    em{
+      padding-right: 20px;
+      float: right;
+    }
+    i{
+      color: $font-color-red;
+    }
+    .div-p1{
+
+    }
+    .div-p2{
+
+    }
+}
+.my-icome-item.icome3 em{
+  color: $font-normal-999;
+}
+
+@media screen and (min-width: 768px){
+  .my-icome-item{
+    p{
+      font-size: 2.2em;
+    }
+    em{
+      padding-right: 40px;
+    }
+  }
+  .my-income-wrap{
+      p{
+        background-size: 13px auto;
+      }
+      .div-p1{
+        span {
+          margin: 4px 12px 0 0;
+          float: left;
+          background: sprite($icon2, icon1);
+          @include sprite-dimensions($icon2, icon1);
+        }
+      }
+      .div-p2{
+        span{
+          margin: 4px 12px 0 0;
+          float: left;
+          background: sprite($icon2, icon2);
+          @include sprite-dimensions($icon2, icon2);
+        }
+      }
+      .icome2{
+        span{
+          margin: 4px 12px 0 0;
+          float: left;
+          background: sprite($icon2, icon3);
+          @include sprite-dimensions($icon2, icon3);
+        }
+      }
+      .icome3{
+        span{
+          margin: 4px 12px 0 0;
+          float: left;
+          background: sprite($icon2, icon4);
+          @include sprite-dimensions($icon2, icon4);
+        }
+      }
+      .icome4{
+        span{
+          margin: 4px 12px 0 0;
+          float: left;
+          background: sprite($icon2, icon5);
+          @include sprite-dimensions($icon2, icon5);
+        }
+      }
   }
 }
