@@ -2756,3 +2756,53 @@ p{
 }
 .register-select{
   width: auto;}
+
+.login-wrap{
+  margin: 0 auto;
+  @extend %show-wrap;
+}
+.login-xyl-logo{
+  padding: 75px 0;
+  background: image-url("login-xyl.png") 50% 50% no-repeat;
+  background-size: 66px auto ;
+}
+
+.login-input,
+.login-input2 {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 18px 0;
+  font-size: 1.4em;
+  display: block;
+  border: 0 none;
+  border-bottom: 1px solid $bd-color-f3;
+  text-indent: 3em;
+  color: $font-color-333;
+}
+
+.login-input{
+  background: image-url("icon2/phone.png") 2% 50% no-repeat;
+  background-size: 11px auto;
+}
+.login-input2{
+  background: image-url("icon2/lock.png") 2% 50% no-repeat;
+  background-size: 14px auto;
+}
+@media screen and (min-width: 768px){
+  .login-xyl-logo{
+    padding: 150px 0;
+    background-size: 133px auto;
+  }
+  .login-input,
+  .login-input2{
+    margin-bottom: 40px;
+    padding: 36px 0;
+    font-size: 2.2em;
+  }
+  .login-input{
+    background-size: 22px auto;
+  }
+  .login-input2{
+    background-size: 28px auto;
+  }
+}
