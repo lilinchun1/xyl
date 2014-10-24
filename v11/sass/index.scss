@@ -38,6 +38,8 @@ $font-color-red:#dd2f2f;
 $bg-normal: #fff;
 $bd-color-f3: #eee;
 $bg-wrap: #f6f7f7;
+$bg-color-yellow:#f6a424;
+
 * {
   margin: 0;
   padding: 0;
@@ -142,7 +144,7 @@ input[type="text"]{
 
 .head {
   height: 95px;
-  background: #f6a424;
+  background: $bg-color-yellow;
   overflow: hidden;
 }
 
@@ -578,7 +580,7 @@ input[type="text"]{
 
 /*font-color */
 .font-yellow {
-  color: #f6a424;
+  color: $bg-color-yellow;
 }
 
 .font-green {
@@ -759,7 +761,7 @@ input[type="text"]{
   }
   .right-btn {
     float: right;
-    background: #f6a424;
+    background: $bg-color-yellow;
   }
 }
 
@@ -1162,7 +1164,7 @@ input[type="text"]{
     top: 24px;
     width: 58px;
     height: 20px;
-    background: #f6a424;
+    background: $bg-color-yellow;
     font-size: 1em;
     border-radius: 4px;
     color: #ffffff;
@@ -1192,7 +1194,7 @@ input[type="text"]{
   font-size: 1.2em;
   color: #ffffff;
   font-weight: bold;
-  background: #f6a424;
+  background: $bg-color-yellow;
   border: 0 none;
   appearance: none;
 }
@@ -1451,7 +1453,7 @@ input[type="text"]{
   }
   .right-btn {
     float: right;
-    background: #f6a424;
+    background: $bg-color-yellow;
   }
 }
 .chankan-more-btn {
@@ -2136,7 +2138,7 @@ input[type="text"]{
     }
   }
 }
-.disabled{
+.box-wrap .disabled{
   background: #d0d0d0;
 }
 .my-bank-alert {
@@ -2556,4 +2558,99 @@ input[type="text"]{
 .my-team-list-none{
 min-height: 300px;
   background: #fff image-url("icon2/team-list-none.png") 50% 50% no-repeat;
+}
+.contact-us-wrap{
+  margin: 0 auto;
+  @extend %show-wrap;
+}
+.contact-us-item{
+  margin: 10px 0;
+  padding: 10px 0;
+  @include item-wrap-mod($bg-normal,$bd-color-f3);
+    p{
+      margin: 0 auto;
+      @extend %show-wrap;
+      padding: 10px 0;
+      font-size: 1.4em;
+      color: $font-color-666;
+    }
+    h2 {
+      padding: 10px 0;
+      margin: 0 auto;
+      @extend %show-wrap;
+      color: $font-color-333;
+      font-size: 1.6em;
+    }
+
+}
+.font-color-blue{
+  color: #016cc6;
+}
+.contact-us-input{
+  margin: 10px auto;
+  width: 94%;
+  border-radius: 4px;
+  border: 1px solid $bd-color-f3;
+  display: block;
+}
+.input-textarea{
+  padding: 10px 0;
+  margin: 0 auto;
+  @extend %show-wrap;
+  display: block;
+  text-indent: 1em;
+  font-size: 1.2em;
+  border: 1px solid $bd-color-f3;
+}
+.contact-us-item .font-color-red{
+  color: #bb0000;
+}
+.contact-us-btn{
+  background-color: $bg-color-yellow;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us-item{
+      p{
+        font-size: 2em;
+      }
+      h2{
+        font-size: 2.2em;
+      }
+  }
+  .input-textarea{
+    font-size: 2em;
+  }
+}
+.system-setting-list{
+  margin: 0 auto;
+  @extend %show-wrap;
+    li {
+      margin-top: 10px;
+      padding: 15px 0;
+      @include item-wrap-mod($bg-normal, $bd-color-f3);
+      text-indent: 2em;
+      background-image: image-url("icon/right-s-line.png");
+      background-repeat: no-repeat;
+      background-position: 96% 50%;
+      background-size: 7px auto;
+    }
+    a{
+      font-size: 1.4em;
+      color: $font-color-666;
+      display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .system-setting-list{
+    li{
+      margin-top: 20px;
+      padding: 30px 0;
+      background-size: 13px auto;
+    }
+    a{
+      font-size: 2.2em;
+    }
+  }
 }
