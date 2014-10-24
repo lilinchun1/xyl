@@ -128,11 +128,13 @@ li {
   list-style-type: none;
 }
 button{
+  border: 0 none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 input[type="text"]{
+  outline: 0 none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1891,7 +1893,7 @@ input[type="text"]{
   }
   .draw-money-btn {
     height: 52px;
-    font-size: 1.8em;
+    font-size: 1em;
   }
   .draw-money-list{
     li{
@@ -1976,6 +1978,8 @@ input[type="text"]{
   width: 99%;
   height: 33px;
   text-indent: 1em;
+  border: 1px solid $bd-color-f3;
+  border-radius: 4px;
 }
 .h100p{
   height: 100%;
@@ -2460,7 +2464,7 @@ input[type="text"]{
       margin: 0 auto;
       @extend %show-wrap;
       overflow: hidden;
-        &:nth-of-type(1) {
+        /*&:nth-of-type(1) {
           .message-date{
             background-color: #f7774a;
           }
@@ -2469,6 +2473,9 @@ input[type="text"]{
         .message-date{
           background-color: #f7774a;
         }
+      }*/
+      .message-date2{
+        background-color: #f7774a;
       }
         p {
           float: left;
@@ -2605,6 +2612,9 @@ min-height: 300px;
 .contact-us-item .font-color-red{
   color: #bb0000;
 }
+.font-color-red{
+  color: #bb0000;
+}
 .contact-us-btn{
   background-color: $bg-color-yellow;
 }
@@ -2654,3 +2664,95 @@ min-height: 300px;
     }
   }
 }
+
+.register-wrap{
+  margin: 10px auto;
+  @extend %show-wrap;
+
+}
+.input-wrap{
+  height: 36px;
+  line-height: 36px;
+  border-radius: 4px;
+  border: 1px solid $bd-color-f3;
+    .register-input{
+      width: 100%;
+      border: 0 none;
+      text-indent: 1em;
+      font-size: 1.2em;
+      color: $font-color-666;
+    }
+}
+.register-btn{
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1.2em;
+  background-color: $bg-color-yellow;
+}
+.register-item{
+  .input-wrap{
+    margin-bottom: 12px;
+  }
+  h2{
+    padding: 22px 0;
+    text-align: center;
+    font-size: 1.6em;
+    color: $font-color-333;
+  }
+}
+.register-yanzheng{
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.input-wrap2{
+  width: 60%;
+  float: left;
+}
+.register-btn2{
+  width: 36%;
+  float: right;
+}
+p{
+  padding-bottom: 6px;
+}
+.input-ck{
+  margin-top: 3px;
+  margin-right: 10px;
+  float: left;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #075c9e;
+}
+@media screen and (min-width: 768px) {
+  .input-wrap{
+    height: 72px;
+    line-height: 72px;
+    font-size: 1.8em;
+  }
+  .register-btn{
+    height: 72px;
+    font-size: 1.8em;
+  }
+  .register-item .input-wrap{
+    margin-bottom: 24px;
+  }
+  .register-item {
+    h2{
+      padding: 44px 0;
+      text-align: center;
+      font-size: 3em;
+    }
+  }
+  p{
+    padding-bottom: 15px;
+    font-size: 1.8em;
+  }
+  .input-ck{
+    width: 22px;
+    height: 22px;
+  }
+}
+.register-select{
+  width: auto;}
