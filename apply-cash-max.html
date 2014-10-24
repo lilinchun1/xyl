@@ -32,9 +32,9 @@
     <div class="overlay" id="J_overlay"></div>
     <div class="modal" id="con1">
         <p>
-            <span class="alert-logo"></span>
+            <span class="alert-logo" id="J-alt-pic"></span>
         </p>
-        <p>
+        <p id="J-alt-con">
             申请金额不能大于账户余额
         </p>
         <p>
@@ -43,18 +43,28 @@
     </div>
 </div>
 <script>
-    window.onload =function () {
-        var btn_text = document.getElementById("J_code");
+    altBox("11sfsfsfs", 2);
+    function altBox(txt, logo) {
         var overlay = document.getElementById("J_overlay");
         var con1 = document.getElementById("con1");
         var btn = document.getElementById("J_btn");
+        var altCon = document.getElementById("J-alt-con");
+        var altPic = document.getElementById("J-alt-pic");
 
-        btn_text.onclick = function () {
-            var scrolltop = document.documentElement.scrollTop ||document.body.scrollTop;
-            overlay.style.display = "block";
-            con1.style.display = "block";
-            overlay.style.height = document.body.clientHeight +scrolltop+'px';
-        };
+        var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+        altCon.innerText = txt;
+        switch (logo) {
+            case 1:
+                altPic.className = "alert-logo";
+                break;
+            case 2:
+                altPic.className = "alert-logo yes-logo";
+                break;
+        }
+        overlay.style.display = "block";
+        con1.style.display = "block";
+        overlay.style.height = document.body.clientHeight + scrolltop + 'px';
+
         btn.onclick = overlay.onclick = function () {
             overlay.style.display = "none";
             con1.style.display = "none";
