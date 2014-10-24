@@ -1607,13 +1607,18 @@ input[type="text"]{
 }
 .indent-show-none{
   min-height: 260px;
-  background: url(../../v11/img/icon/bg-none-s.png) 50% 50% no-repeat;
+  line-height: 260px;
+  font-size: 1em;
+  text-align: center;
+  background: url(../../v11/img/icon/bg-none-s.png) 50% 20% no-repeat;
 }
 
 @media screen and (min-width: 768px){
   .indent-show-none{
     min-height: 520px;
-    background: url(../../v11/img/icon/bg-none.png) 50% 50% no-repeat;
+    line-height: 520px;
+    font-size: 3em;
+    background: url(../../v11/img/icon/bg-none.png) 50% 12% no-repeat;
   }
 }
 
