@@ -43,8 +43,8 @@
     </div>
 </div>
 <script>
-    altBox("111111111", 2);
-    function altBox(txt, logo) {
+    altBox("111111111", 2,"http://www.baidu.com");
+    function altBox(txt, logo,Ourl) {
         var overlay = document.getElementById("J_overlay");
         var con1 = document.getElementById("con1");
         var btn = document.getElementById("J_btn");
@@ -68,6 +68,9 @@
         btn.onclick = overlay.onclick = function () {
             overlay.style.display = "none";
             con1.style.display = "none";
+            if(Ourl){
+                window.location.href = Ourl;
+            }
         };
     }
 </script>
