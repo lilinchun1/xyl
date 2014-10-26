@@ -2526,13 +2526,13 @@ input:focus{
   float: left;
   width: 36px;
   height: 36px;
-  line-height: 36px;
+  line-height: 38px;
   color: #ffffff;
   border-radius: 50%;
   text-align: center;
-  background: #e1e1e1 image-url("icon2/date.png") 50% 40% no-repeat;
+  background: #e1e1e1 image-url("icon2/date.png") 50% 39% no-repeat;
   background-size: 22px auto;
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 .message-wrap{
   padding-bottom: 0;
@@ -2578,7 +2578,7 @@ input:focus{
   .message-date{
     width: 74px;
     height: 74px;
-    line-height: 74px;
+    line-height: 80px;
     background-size: 39px auto;
   }
 }
