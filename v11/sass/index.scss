@@ -907,6 +907,7 @@ input[type="text"]{
   }
   .my-team-list {
     li {
+      position: relative;
       height: 116px;
       p {
         margin-top: 20px;
@@ -1074,7 +1075,7 @@ input[type="text"]{
   padding: 3px 0;
   margin: 14px 0;
   width: 44%;
-  height: 15px;
+  //height: 15px;
   line-height: 15px;
   text-align: center;
   color: #999999;
