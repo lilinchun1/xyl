@@ -206,7 +206,24 @@ input[type="text"]{
       width: 16px;
       overflow: hidden;
       display: block;
-      @include responsive-sprite(level, $level, level1)
+    }
+    .lv1{
+      @include responsive-sprite(level, $level, l-level1);
+    }
+    .lv2{
+      @include responsive-sprite(level, $level, l-level2);
+    }
+    .lv3{
+      @include responsive-sprite(level, $level, l-level3);
+    }
+    .lv4{
+      @include responsive-sprite(level, $level, l-level4);
+    }
+    .lv5{
+      @include responsive-sprite(level, $level, l-level5);
+    }
+    .lv6{
+      @include responsive-sprite(level, $level, l-level6);
     }
   }
   .message {
