@@ -431,12 +431,35 @@ input[type="text"]{
       .wz2 {
         margin-top: 18px;
         background: sprite($icon, right-s-line2);
-        @include sprite-dimensions($icon, right-s-line2)
+        @include sprite-dimensions($icon, right-s-line2);
       }
       .img {
         margin: 15px 0 0 20px;
-        background: sprite($level, level1);
-        @include sprite-dimensions($level, level1)
+
+      }
+      .lv1{
+        background: sprite($level, l-level1);
+        @include sprite-dimensions($level, l-level1);
+      }
+      .lv2{
+        background: sprite($level, l-level2);
+        @include sprite-dimensions($level, l-level2);
+      }
+      .lv3{
+        background: sprite($level, l-level3);
+        @include sprite-dimensions($level, l-level3);
+      }
+      .lv4{
+        background: sprite($level, l-level4);
+        @include sprite-dimensions($level, l-level4);
+      }
+      .lv5{
+        background: sprite($level, l-level5);
+        @include sprite-dimensions($level, l-level5);
+      }
+      .lv6{
+        background: sprite($level, l-level6);
+        @include sprite-dimensions($level, l-level6);
       }
     }
     .head-right-set {
@@ -997,7 +1020,7 @@ input[type="text"]{
       }
 
       &:nth-of-type(5){
-        width: 17.9%;
+        width: 16%;
       }
       &:nth-of-type(6){
         width:3%;
@@ -1020,6 +1043,7 @@ input[type="text"]{
   /* border-top: 1px solid #bfbfbf;*/
   box-shadow: 0 1px 3px #bfbfbf inset;
   border-radius: 20px;
+  overflow: hidden;
   li {
     margin-top: 1px;
     width: 20%;
@@ -1036,8 +1060,10 @@ input[type="text"]{
     top: 0;
     left: 0;
     width: 0%;
+    border-radius: 20px;
     background: rgba(247,119,74,.8);
     border-right: 0 none;
+    overflow:hidden;
   }
 }
 
@@ -1169,7 +1195,7 @@ input[type="text"]{
   }
   h2 {
     margin-top: 10px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: $font-color-666;
   }
   h3 {
@@ -2818,7 +2844,7 @@ p{
   .login-input,
   .login-input2{
     margin-bottom: 40px;
-    padding: 36px 0;
+    padding: 36px 0 36px 36px;
     font-size: 2.2em;
   }
   .login-input{
