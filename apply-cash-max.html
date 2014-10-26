@@ -43,7 +43,7 @@
     </div>
 </div>
 <script>
-    altBox("11sfsfsfs", 2);
+    altBox("111111111", 2);
     function altBox(txt, logo) {
         var overlay = document.getElementById("J_overlay");
         var con1 = document.getElementById("con1");
@@ -52,7 +52,7 @@
         var altPic = document.getElementById("J-alt-pic");
 
         var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
-        altCon.innerText = txt;
+        altCon.textContent=altCon.innerText = txt;
         switch (logo) {
             case 1:
                 altPic.className = "alert-logo";
