@@ -139,6 +139,11 @@ input[type="text"]{
   -moz-appearance: none;
   appearance: none;
 }
+input:active,
+input:hover,
+input:focus{
+  background-color: transparent;
+}
 /*index.html*/
 .box-wrap {
   width: 100%;
@@ -1497,7 +1502,7 @@ input[type="text"]{
 }
 
 .indent-btns{
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   @extend %show-wrap;
   height: 28px;
   .left-btn,.right-btn{
@@ -2755,6 +2760,7 @@ min-height: 300px;
       text-indent: 1em;
       font-size: 1.2em;
       color: $font-color-666;
+      background-color: transparent;
     }
 }
 .register-btn{
