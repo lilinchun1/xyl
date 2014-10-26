@@ -830,6 +830,7 @@ input[type="text"]{
     background: $bd-color-f3;
   }
   li {
+    position: relative;
     margin: 0 10px;
     height: 58px;
     border-bottom: 1px solid $bd-color-f3;
@@ -1458,8 +1459,12 @@ input[type="text"]{
       border-bottom: 1px solid $bd-color-f3;
         h3 {
           padding-top: 10px;
+          height: 18px;
           color: $font-color-666;
           font-size: 1.2em;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
         p {
           margin-top: 3px;
@@ -1471,6 +1476,7 @@ input[type="text"]{
         }
     }
     .indent-item-pic{
+      position: relative;
       float: left;
       margin-top: 8px;
       margin-right: 10px;
@@ -1478,6 +1484,15 @@ input[type="text"]{
       height: 63px;
       border: 1px solid $bd-color-f3;
       overflow: hidden;
+      .tj-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32px;
+        height: 20px;
+        background: image-url("img_2.png") 0 0 no-repeat;
+        background-size: cover;
+      }
     }
 }
 
@@ -1569,12 +1584,19 @@ input[type="text"]{
             margin-top: 10px;
             font-size: 2.2em;
           }
+          h3{
+            height: 33px;
+          }
       }
       .indent-item-pic{
         margin-top: 16px;
         margin-right: 22px;
         width: 126px;
         height: 126px;
+        .tj-logo{
+          width: 64px;
+          height: 40px;
+        }
       }
   }
   .indent-btns{
@@ -2753,6 +2775,9 @@ min-height: 300px;
     font-size: 1.6em;
     color: $font-color-333;
   }
+  p{
+    padding-bottom: 6px;
+  }
 }
 .register-yanzheng{
   margin-bottom: 10px;
@@ -2766,9 +2791,7 @@ min-height: 300px;
   width: 36%;
   float: right;
 }
-p{
-  padding-bottom: 6px;
-}
+
 .input-ck{
   margin-top: 3px;
   margin-right: 10px;
@@ -2796,11 +2819,12 @@ p{
       text-align: center;
       font-size: 3em;
     }
+    p{
+      padding-bottom: 15px;
+      font-size: 1.8em;
+    }
   }
-  p{
-    padding-bottom: 15px;
-    font-size: 1.8em;
-  }
+
   .input-ck{
     width: 22px;
     height: 22px;
