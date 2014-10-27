@@ -367,7 +367,7 @@ input:focus{
   }
   h3 {
     margin-top: 6px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: center;
   }
   .number {
@@ -585,7 +585,7 @@ input:focus{
   h2 {
     padding-left: 8%;
     margin-top: 5px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: $font-color-666;
   }
   p {
@@ -792,7 +792,7 @@ input:focus{
     height: 30px;
     border: 0 none;
     border-radius: 4px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
     color: #ffffff;
     -webkit-appearance: none;
@@ -816,7 +816,7 @@ input:focus{
   @extend %show-wrap;
   height: 30px;
   line-height: 30px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: $font-color-666;
 }
 
@@ -1084,7 +1084,7 @@ input:focus{
   line-height: 15px;
   text-align: center;
   color: #999999;
-  font-size: 1.2em;
+  font-size: 1.4em;
   border: 1px solid $bd-color-f3;
   border-radius: 4px;
   background: $bg-wrap;
@@ -1233,7 +1233,7 @@ input:focus{
   p {
     margin: 12px auto;
     @extend %show-wrap;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: $font-color-666;
   }
 }
@@ -1244,7 +1244,7 @@ input:focus{
   @extend %show-wrap;
   display: block;
   border-radius: 4px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: #ffffff;
   font-weight: bold;
   background: $bg-color-yellow;
@@ -1366,7 +1366,7 @@ input:focus{
     float: left;
     width: 20%;
     height: 24px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: $font-color-666;
     text-align: center;
     box-shadow: 1px 0 0 $bd-color-f3 inset;
@@ -1405,7 +1405,7 @@ input:focus{
       line-height: 40px;
       border-bottom: 1px solid $bd-color-f3;
       text-indent: 2px;
-      font-size: 1.2em;
+      font-size: 1.4em;
         em {
           color: $font-color-666;
         }
@@ -1422,7 +1422,7 @@ input:focus{
     @extend %show-wrap;
     height: 38px;
     line-height: 38px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: $font-normal-999;
     border-bottom: 1px solid $bd-color-f3;
       em {
@@ -1465,7 +1465,7 @@ input:focus{
           padding-top: 10px;
           height: 18px;
           color: $font-color-666;
-          font-size: 1.2em;
+          font-size: 1.4em;
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
@@ -1473,7 +1473,7 @@ input:focus{
         p {
           margin-top: 3px;
           color: $font-color-666;
-          font-size: 1.2em;
+          font-size: 1.4em;
         }
         i{
           color: $font-normal-999;
@@ -1508,7 +1508,7 @@ input:focus{
     width: 45%;
     height: 28px;
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1.4em;
     border-radius: 4px;
     border: 0 none;
     -webkit-appearance: none;
@@ -1629,7 +1629,7 @@ input:focus{
   @extend %show-wrap;
     li{
       padding: 14px 0;
-      font-size: 1.2em;
+      font-size: 1.4em;
       color: $font-normal-999;
       overflow: hidden;
         em {
@@ -1657,7 +1657,7 @@ input:focus{
   @extend %show-wrap;
     li{
       margin: 10px 0;
-      font-size: 1.2em;
+      font-size: 1.4em;
     }
 }
 
@@ -1750,7 +1750,7 @@ input:focus{
       margin-top: 3px;
       padding: 10px 0;
       width: 32%;
-      font-size: 1.2em;
+      font-size: 1.4em;
       color: $font-color-666;
       text-align: center;
       display: inline-block;
@@ -1824,7 +1824,7 @@ input:focus{
   @extend %show-wrap;
     li{
       padding: 5% 0;
-      font-size: 1.2em;
+      font-size: 1.4em;
       color: $font-color-666;
       border-bottom: 1px solid $bd-color-f3;
       background: image-url("icon/right-s-line.png") 98% 50% no-repeat;
@@ -1914,7 +1914,7 @@ input:focus{
   border-radius: 4px;
   background: $font-color-red;
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
   border: 0 none;
   -webkit-appearance: none;
@@ -1931,7 +1931,7 @@ input:focus{
       @extend %show-wrap;
       border-bottom: 1px solid $bd-color-f3;
       color: $font-normal-999;
-      font-size: 1.2em;
+      font-size: 1.4em;
       background: image-url("icon/right-s-line.png") 100% 50% no-repeat;
       background-size: 7px auto;
         &:last-of-type{
@@ -2047,7 +2047,7 @@ input:focus{
     font-weight: bold;
   }
   span {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: $font-color-red;
     text-align: center;
   }
@@ -2237,7 +2237,7 @@ input:focus{
   p {
     margin: 0 auto;
     width: 66%;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .close {
     position: absolute;
@@ -2303,7 +2303,7 @@ input:focus{
       line-height: 1.8em;
       @extend %show-wrap;
       color: $font-color-red;
-      font-size: 1.2em;
+      font-size: 1.4em;
     }
 }
 .change-bank-btn-qd{
@@ -2600,7 +2600,7 @@ input:focus{
       width: 80%;
       height: 24px;
       line-height: 24px;
-      font-size: 1.2em;
+      font-size: 1.4em;
       display: block;
       text-align: center;
       color: $font-normal-999;
@@ -2608,7 +2608,7 @@ input:focus{
     }
     p{
       margin: 15px 0;
-      font-size: 1.2em;
+      font-size: 1.4em;
       text-indent: 2em;
       color: $font-color-666;
     }
@@ -2684,7 +2684,7 @@ min-height: 300px;
   @extend %show-wrap;
   display: block;
   text-indent: 1em;
-  font-size: 1.2em;
+  font-size: 1.4em;
   border: 1px solid $bd-color-f3;
 }
 .contact-us-item .font-color-red{
@@ -2757,7 +2757,7 @@ min-height: 300px;
       width: 100%;
       border: 0 none;
       text-indent: 1em;
-      font-size: 1.2em;
+      font-size: 1.4em;
       color: $font-color-666;
       background-color: transparent;
     }
@@ -2767,7 +2767,7 @@ min-height: 300px;
   height: 36px;
   border-radius: 4px;
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.4em;
   background-color: $bg-color-yellow;
 }
 .register-item{
