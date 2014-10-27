@@ -1260,7 +1260,7 @@ input:focus{
   top: 0px;
   left: 0px;
   z-index: 999999999;
-  background: url(../../v11/img/pop.png) no-repeat rgba(0, 0, 0, 0.7);
+  background: image-url("pop.png") no-repeat rgba(0, 0, 0, 0.7);
   background-size: 100%;
 }
 
@@ -1647,7 +1647,7 @@ input:focus{
         }
     }
     .has-right-btn{
-      background:  url(../../v11/img/icon/right-s-line.png) 95% 50% no-repeat;
+      background:  image-url("icon/right-s-line.png") 95% 50% no-repeat;
       a{
         display: block;
       }
@@ -1669,7 +1669,7 @@ input:focus{
         font-size: 2.4em;
       }
     .has-right-btn{
-      background: url(../../v11/img/icon/right-s-line.png) 95% 50% no-repeat;
+      background: image-url("icon/right-s-line.png") 95% 50% no-repeat;
     }
   }
   .ident-show-item-info{
@@ -1684,7 +1684,7 @@ input:focus{
   line-height: 260px;
   font-size: 1em;
   text-align: center;
-  background: url(../../v11/img/icon/bg-none-s.png) 50% 20% no-repeat;
+  background: image-url("icon/bg-none-s.png") 50% 20% no-repeat;
 }
 
 @media screen and (min-width: 768px){
@@ -1692,7 +1692,7 @@ input:focus{
     min-height: 520px;
     line-height: 520px;
     font-size: 3em;
-    background: url(../../v11/img/icon/bg-none.png) 50% 12% no-repeat;
+    background: image-url("icon/bg-none.png") 50% 12% no-repeat;
   }
 }
 
