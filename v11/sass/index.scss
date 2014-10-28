@@ -1750,6 +1750,7 @@ input[type="text"]{
       height: 40px;
       float: left;
       text-align: center;
+      font-size: 1.4em;
     }
     .active{
       color: $font-color-red;
@@ -1802,15 +1803,18 @@ input[type="text"]{
       }
       h2{
         margin-top: 20px;
-      }
-      h2,h3{
         font-size: 2.2em;
+      }
+      h3{
+        font-size: 2em;
       }
   }
   .shop-option{
     height: 76px;
     line-height: 76px;
-    font-size: 2.2em;
+    li{
+      font-size: 2.2em;
+    }
     .active{
       color: $font-color-red;
     }
