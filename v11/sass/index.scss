@@ -1204,6 +1204,10 @@ input[type="text"]{
     margin-top: 10px;
     font-size: 1.4em;
     color: $font-color-666;
+    overflow: hidden;
+    i{
+      float: left;
+    }
   }
   h3 {
     margin-top: 2px;
@@ -1222,6 +1226,9 @@ input[type="text"]{
     color: #ffffff;
     border: 0 none;
     appearance: none;
+  }
+  .level-icon{
+    float: left;
   }
 }
 
@@ -1718,6 +1725,14 @@ input[type="text"]{
   }
   h2{
     margin-top: 10px;
+    overflow: hidden;
+    i {
+      float: left;
+    }
+    span{
+      float: left;
+
+    }
   }
   h3{
     span{
@@ -1918,7 +1933,7 @@ input[type="text"]{
 }
 .draw-money-btn{
   width: 100%;
-  height: 26px;
+  height: 34px;
   border-radius: 4px;
   background: $font-color-red;
   color: #ffffff;
@@ -2453,6 +2468,7 @@ input[type="text"]{
     }
     .icome1-p2{
       padding-top: 15px;
+      background-position: 100% 71%;
     }
     em{
       padding-right: 20px;
