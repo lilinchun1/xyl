@@ -12,6 +12,11 @@
 </head>
 <body>
 <div class="box-wrap">
+    <div class="my-bank-alert my-bank-alert2" id="J-my-bank-alert">
+        <p>关注提醒：</p>
+        <p>您尚未关注新玉麟微信公众号请先关注后，进行账号管理！</p>
+        <div class="close">x</div>
+    </div>
     <header class="head">
         <div class="head-left">
             <div class="pic-wrap">
@@ -31,7 +36,7 @@
             <div class="shop-level">
                 <a href="">
                     <span class="wz">级别:</span>
-                    <span class="img lv3"></span>
+                    <span class="img lv6"></span>
                     <span class="wz2"></span>
                 </a>
             </div>
@@ -112,6 +117,15 @@
     <footer class="foot">
         易享科技出品
     </footer>
+
 </div>
+<script>
+    window.onload = function () {
+        var obox = document.getElementById("J-my-bank-alert");
+        obox.onclick = function () {
+            obox.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>

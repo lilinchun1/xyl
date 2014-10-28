@@ -400,7 +400,7 @@
 <script src="http://cdn.staticfile.org/zepto/1.1.4/zepto.min.js"></script>
 <script>
     $(function(){
-        var oBox = $(".indent-item-list");
+       /* var oBox = $(".indent-item-list");
         var oBtn = $(".add-more");
 
         for(var i=0; i < oBtn.length; i++){
@@ -423,9 +423,42 @@
                 }
 
             }
-        }
+        }*/
 
-    });
+
+        /*$(".add-more").on("click", function(){
+
+            if($(this).hasClass("up-btn")){
+                $(this).removeClass("up-btn");
+                $(this).parent().find('ul').addClass('list-min-heigit')
+
+            }else{
+                $(this).addClass("up-btn");
+                $(this).addClass("list-min-heigit");
+                $(this).parent().find('ul').removeClass('list-min-heigit')
+            }
+
+        });
+
+    });*/
+        $(function(){
+            $(".indent-wrap").on("click", ".add-more", function(){
+
+                if($(this).hasClass("up-btn")){
+                    $(this).removeClass("up-btn");
+                    $(this).parent().find('ul').addClass('list-min-heigit')
+
+                }else{
+                    $(this).addClass("up-btn");
+                    $(this).addClass("list-min-heigit");
+                    $(this).parent().find('ul').removeClass('list-min-heigit');
+                }
+
+            });
+
+        })
+
+
 </script>
 </body>
 </html>

@@ -1,4 +1,6 @@
 @charset "utf-8";
+/*! $Id$ */
+
 /**
  * Created with IntelliJ IDEA. 
  * User: llc 
@@ -6,6 +8,7 @@
  * Time: 10:13 
  * To change this template use File | Settings | File Templates. 
  */
+
 @import "compass/utilities/sprites";
 // Include compass sprite helpers
 @import "compass/css3/background-size";
@@ -13,7 +16,9 @@
 // Include helper to calc background size
 
 $icon: sprite-map("icon/*.png", $spacing: 20px);
+$icon_2x:sprite-map("icon_2x/*.png", $spacing: 20px);
 $level: sprite-map("level/*.png", $spacing: 20px);
+$level_2x:sprite-map("level_2x/*.png", $spacing: 20px);
 $icon2: sprite-map("icon2/*.png", $spacing: 30px);
 
 @mixin responsive-sprite($pas, $clas, $name) {
@@ -435,36 +440,34 @@ input:focus{
       }
       .wz2 {
         margin-top: 18px;
-        background: sprite($icon, right-s-line2);
-        @include sprite-dimensions($icon, right-s-line2);
+        @include responsive-sprite(icon_2x, $icon_2x, right-s-line2);
       }
       .img {
-        margin: 15px 0 0 20px;
-
+        margin: 18px 0 0 20px;
+        background-size: 100%;
       }
       .lv1{
-        background: sprite($level, l-level1);
-        @include sprite-dimensions($level, l-level1);
+        @include responsive-sprite(level_2x, $level_2x, l-level1);
       }
       .lv2{
         background: sprite($level, l-level2);
-        @include sprite-dimensions($level, l-level2);
+        @include responsive-sprite(level_2x, $level_2x, l-level2);
       }
       .lv3{
         background: sprite($level, l-level3);
-        @include sprite-dimensions($level, l-level3);
+        @include responsive-sprite(level_2x, $level_2x, l-level3);
       }
       .lv4{
         background: sprite($level, l-level4);
-        @include sprite-dimensions($level, l-level4);
+        @include responsive-sprite(level_2x, $level_2x, l-level4);
       }
       .lv5{
         background: sprite($level, l-level5);
-        @include sprite-dimensions($level, l-level5);
+        @include responsive-sprite(level_2x, $level_2x, l-level5);
       }
       .lv6{
         background: sprite($level, l-level6);
-        @include sprite-dimensions($level, l-level6);
+        @include responsive-sprite(level_2x, $level_2x, l-level6);
       }
     }
     .head-right-set {
@@ -472,10 +475,9 @@ input:focus{
       width: 60px;
       height: 60px;
       a {
-        margin: 12px 0 0 14px;
+        margin: 20px 0 0 22px;
         display: block;
-        background: sprite($icon, set);
-        @include sprite-dimensions($icon, set)
+        @include responsive-sprite(icon_2x, $icon_2x, set);
       }
     }
     .message {
@@ -483,10 +485,9 @@ input:focus{
       width: 60px;
       height: 60px;
       a {
-        margin: 12px 0 0 14px;
+        margin: 20px 0 0 22px;
         display: block;
-        background: sprite($icon, msg);
-        @include sprite-dimensions($icon, msg)
+        @include responsive-sprite(icon_2x, $icon_2x, msg);
       }
     }
     .number {
@@ -2226,7 +2227,7 @@ input:focus{
 }
 .my-bank-alert {
   padding: 10px 0;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   color: #ffffff;
@@ -3023,3 +3024,4 @@ min-height: 300px;
   display: block
 }
 /*---------------alert----------------------*/
+
