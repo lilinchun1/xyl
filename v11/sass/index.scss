@@ -20,6 +20,7 @@ $icon_2x:sprite-map("icon_2x/*.png", $spacing: 20px);
 $level: sprite-map("level/*.png", $spacing: 20px);
 $level_2x:sprite-map("level_2x/*.png", $spacing: 20px);
 $icon2: sprite-map("icon2/*.png", $spacing: 30px);
+$icon2_2x: sprite-map("icon2_2x/*.png", $spacing: 30px);
 
 @mixin responsive-sprite($pas, $clas, $name) {
   $iconname: "#{$pas}/#{$name}.png";
@@ -729,8 +730,7 @@ input:focus{
     .head-right .shop-level {
       margin-top: 12px;
       padding: 4px 6px;
-      height: 24px;
-      line-height: 24px;
+      height: 18px;
     }
   }
   .management-con {
@@ -1026,7 +1026,7 @@ input:focus{
     width: 20%;
     float: left;
       &:nth-of-type(1){
-        width: 19.1%;
+        width: 18.4%;
       }
 
       &:nth-of-type(5){
@@ -1037,8 +1037,8 @@ input:focus{
       }
   }
   span {
-    width: 12px;
-    height: 10px;
+    width: 16px;
+    //height: 10px;
     display: inline-block;
   }
 
@@ -1538,6 +1538,9 @@ input:focus{
 }
 
 @media screen and (min-width: 768px) {
+  .join-in-con{
+    padding-top: 120px;
+  }
   .indent-tool{
     height: 80px;
   }
@@ -1572,14 +1575,12 @@ input:focus{
       height: 50px;
         span{
           margin-left: -24px;
-          background: sprite($icon, down-btn);
-          @include sprite-dimensions($icon, down-btn)
+          @include responsive-sprite(icon_2x, $icon_2x, down-btn);
         }
     }
     .up-btn{
       span{
-        background: sprite($icon, up-btn);
-        @include sprite-dimensions($icon, up-btn)
+        @include responsive-sprite(icon_2x, $icon_2x, up-btn);
       }
     }
   }
@@ -1685,7 +1686,15 @@ input:focus{
   line-height: 260px;
   font-size: 1em;
   text-align: center;
-  background: image-url("icon/bg-none-s.png") 50% 20% no-repeat;
+  background: #fff image-url("icon/bg-none-s.png") 50% 20% no-repeat;
+  &:after{
+    content: "";
+    width: 0;
+  }
+  &:before{
+    content: "";
+    width: 0;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -1693,7 +1702,7 @@ input:focus{
     min-height: 520px;
     line-height: 520px;
     font-size: 3em;
-    background: image-url("icon/bg-none.png") 50% 12% no-repeat;
+    background: #fff image-url("icon/bg-none.png") 50% 12% no-repeat;
   }
 }
 
@@ -1965,15 +1974,14 @@ input:focus{
       width: 52px;
       height: 52px;
       span {
-        margin: 14px 0 0 14px;
-        background: sprite($icon, select-logo);
-        @include sprite-dimensions($icon, select-logo)
+        margin: 18px 0 0 17px;
+      @include responsive-sprite(icon_2x, $icon_2x, select-logo);
       }
     }
   }
   .draw-money-btn {
     height: 52px;
-    font-size: 1em;
+    font-size: 2em;
   }
   .draw-money-list{
     li{
@@ -2454,12 +2462,7 @@ input:focus{
     i{
       color: $font-color-red;
     }
-    .div-p1{
 
-    }
-    .div-p2{
-
-    }
 }
 .my-icome-item.icome3 em{
   color: $font-normal-999;
@@ -2480,42 +2483,38 @@ input:focus{
       }
       .div-p1{
         span {
-          margin: 4px 12px 0 0;
+          margin: 8px 12px 0 0;
           float: left;
-          background: sprite($icon2, icon1);
-          @include sprite-dimensions($icon2, icon1);
+          @include responsive-sprite(icon2_2x, $icon2_2x, icon1);
         }
       }
       .div-p2{
         span{
-          margin: 4px 12px 0 0;
+          margin: 8px 12px 0 0;
           float: left;
-          background: sprite($icon2, icon2);
-          @include sprite-dimensions($icon2, icon2);
+          @include responsive-sprite(icon2_2x, $icon2_2x, icon2);
         }
       }
       .icome2{
         span{
-          margin: 4px 12px 0 0;
+          margin: 8px 12px 0 0;
           float: left;
-          background: sprite($icon2, icon3);
-          @include sprite-dimensions($icon2, icon3);
+          @include responsive-sprite(icon2_2x, $icon2_2x, icon3);
         }
       }
       .icome3{
         span{
-          margin: 4px 12px 0 0;
+          margin: 8px 12px 0 0;
           float: left;
-          background: sprite($icon2, icon4);
-          @include sprite-dimensions($icon2, icon4);
+          @include responsive-sprite(icon2_2x, $icon2_2x, icon4);
         }
       }
       .icome4{
         span{
-          margin: 4px 12px 0 0;
+          margin: 8px 12px 0 0;
           float: left;
-          background: sprite($icon2, icon5);
-          @include sprite-dimensions($icon2, icon5);
+          @include responsive-sprite(icon2_2x, $icon2_2x, icon5);
+
         }
       }
   }
@@ -3024,4 +3023,4 @@ min-height: 300px;
   display: block
 }
 /*---------------alert----------------------*/
-
+.a{}
