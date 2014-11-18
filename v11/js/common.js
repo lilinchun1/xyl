@@ -1,4 +1,4 @@
-var touchMethod = "tap";//tap
+var touchMethod = "tap";//click
 
 function GetQueryString(name){
 	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
@@ -84,10 +84,11 @@ function contains(arr, str) {
     return false;
 }
 
-//判断是否是微信浏览器 2014-9-17 zhangyating
+//判断是否是微信浏览器
 function isWeiXin(){
     var ua = window.navigator.userAgent.toLowerCase();
-    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+    //诺基亚Windows Phone不返回MicroMessenger
+    if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/Windows Phone/i) == 'windows phone'){
         return true;
     }else{
         return false;
@@ -95,14 +96,9 @@ function isWeiXin(){
 }
 
 //屏蔽其他浏览器
-
-function isWxBrowser(){
+window.onload=function(){
 	if(isWeiXin() == false){
-		alert('请在微信中打开链接^-^');
-		//window.location.href ="http://o2o.exweixin.com/weka/wap/404.php?err_msg=请在微信中打开链接&get_href=1";
+		//alert('请在微信中打开链接^-^');
+		window.location.href ="http://o2o.exweixin.com/weka/wap/404.php?err_msg=" + encodeURIComponent("请在微信中打开链接") + "&get_href=1";
 	}
-
 }
-
-/*用window.onload调用isWxBrowser()*/
-window.onload=isWxBrowser;//不要括号
