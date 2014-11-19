@@ -311,42 +311,33 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   border-radius: 50%;
   font-size: 10px;
   color: #fff;
-  -moz-border-radius: 50%;
-  /* Webkit browsers */
-  -webkit-border-radius:  50%;
-  /* W3C syntax - likely to be standard so use for future proofing */
-  border-radius: 50%;
-
 }
 }
 
 .pic-wrap {
-margin: 12px auto;
-width: 66px;
-height: 66px;
-border: 2px solid #fff;
-box-shadow: 1px 2px 3px #bebebe;
-border-radius: 50%;
-/* Gecko browsers */
--moz-border-radius: 66px;
-/* Webkit browsers */
--webkit-border-radius:  66px;
-/* W3C syntax - likely to be standard so use for future proofing */
-border-radius: 66px;
-overflow: hidden;
-img {
+  position: relative;
+  margin: 12px auto;
+  width: 66px;
+  height: 66px;
+  border: 2px solid #fff;
+  box-shadow: 1px 2px 3px #bebebe;
   border-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
 }
+.pic-wrap-a{
+  display: block;
+  width: 66px;
+  height: 66px;
+  overflow: hidden;
 }
 .head_vip{
-position: relative;
-margin-left:64px;
-z-index: 999;
-top:-80px ;
-
-}
-.head_vip img{
-width: 60%;
+  position: absolute;
+  right: -4px;
+  z-index: 9;
+  top: 0px ;
+  width: 22px;
 }
 
 .income {
@@ -456,13 +447,7 @@ li {
      border-radius: 50%;
      font-size: 1em;
      color: #fff;
-    /* Gecko browsers */
-    -moz-border-radius: 50%;
-    /* Webkit browsers */
-    -webkit-border-radius:  50%;
-    /* W3C syntax - likely to be standard so use for future proofing */
-    border-radius: 50%;display:block;
-
+     display:block;
   }
 }
 
@@ -472,14 +457,6 @@ li {
   width: 66px;
   height: 66px;
   border-radius: 50%;
-  /* Gecko browsers */
-  /* Gecko browsers */
-  -moz-border-radius: 50%;
-  /* Webkit browsers */
-  -webkit-border-radius:  50%;
-  /* W3C syntax - likely to be standard so use for future proofing */
-  border-radius: 50%;
-
 }
 
 .foot {
@@ -509,16 +486,14 @@ li {
     border: 6px solid #fff;
     border-radius: 50%;
   }
-  .head_vip{
-    position: relative;
-    margin-left:164px;
-    z-index: 999;
-    top:-180px ;
-
+  .pic-wrap-a{
+    width: 158px;
+    height: 158px;
   }
-
-  .head_vip img{
-    width: 65%;
+  .head_vip{
+    right: -10px;
+    top: 0 ;
+    width: 44px;
   }
   .head-right {
     .head-shop-tt {
@@ -1941,18 +1916,15 @@ li {
     li {
       margin: 0 auto;
       @extend %show-wrap;
-
-
       border-bottom: 1px solid $bd-color-f3;
         h3 {
           padding-top: 10px;
           color: $font-color-666;
+          height: 32px;
           font-size: 1.4em;
-          line-height:110%;
+          line-height:16px;
           display: block;
-          height:30px;
           overflow: hidden;
-
         }
         p {
           margin-top:5px;
@@ -2106,7 +2078,7 @@ li {
           h3{
             height: 48px;
             overflow: hidden;
-
+            line-height: 24px;
           }
       }
       .indent-item-pic{
