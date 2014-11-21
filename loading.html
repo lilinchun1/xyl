@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="telephone=no">
+<title>Document</title>
+<link rel="stylesheet" href=""/>
+    <style>
+        @-webkit-keyframes loading {
+            0% {
+                -webkit-transform: rotate(0deg)
+            }
+            100% {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+        @-moz-keyframes loading {
+            0% {
+                -moz-transform: rotate(0deg)
+            }
+            100% {
+                -moz-transform: rotate(360deg)
+            }
+        }
+
+        @-o-keyframes loading {
+            0% {
+                -o-transform: rotate(0deg)
+            }
+            100% {
+                -o-transform: rotate(360deg)
+            }
+        }
+
+        @-ms-keyframes loading {
+            0% {
+                -ms-transform: rotate(0deg)
+            }
+            100% {
+                -ms-transform: rotate(360deg)
+            }
+        }
+
+        @keyframes loading {
+            0% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+        .mp_loading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 9;
+            margin: -60px 0 0 -60px;
+            width: 120px;
+            height: 120px;
+            background-color: #2D3132;
+            -webkit-transform-style: preserve-3d;
+        }
+        .mp_loading_clip {
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            -webkit-animation: loading 1.2s linear infinite;
+            -moz-animation: loading 1.2s linear infinite;
+            -o-animation: loading 1.2s linear infinite;
+            -ms-animation: loading 1.2s linear infinite;
+            animation: loading 1.2s linear infinite
+        }
+
+        .mp_loading_bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 108px;
+            height: 108px;
+            border-radius: 100px;
+            overflow: hidden;
+            clip: rect(0px, 72px, 140px, 0);
+            background: rgba(0, 0, 0, 0);
+            border: 6px solid #fff;
+            -webkit-mask: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)))
+        }
+
+        .mp_loading_txt {
+            font-size: 28px;
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -30px;
+            text-align: center;
+            color: #fff
+        }
+    </style>
+</head>
+<body>
+    <div id="J_loading" class="mp_loading">
+        <div class="mp_loading_clip">
+            <div class="mp_loading_bar"></div>
+        </div>
+        <div id="J_precent" class="mp_loading_txt">0%</div>
+    </div>
+</body>
+</html>
