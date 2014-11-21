@@ -2780,10 +2780,10 @@ li {
   @extend %show-wrap;
   @include item-wrap-mod($bg-normal,$bd-color-f3);
     .bank-logo{
-      margin: 20px 20px 20px 15px;
+      margin: 10px 0px 20px 5px;
       float: left;
-      width: 55px;
-      height: 55px;
+      width: 70px;
+      height: 70px;
     }
     p{
       padding: 4px 0;
