@@ -318,6 +318,7 @@
     line-height: 40px;
   }
   .level-right{
+    float: right;
     font-weight: bold;
     font-size: 1.4em;
     color: #000000;
@@ -627,11 +628,11 @@
   z-index: 9;
   width: 100%;
   overflow: hidden;
-  padding-left: 25px;
   height: 50px;
   line-height: 50px;
   background: #ffffff;
   span{
+    padding-left: 25px;
     font-size: 1.6em;
     color: #737373;
   }
