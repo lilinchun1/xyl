@@ -258,6 +258,7 @@
 
 /*-----------------------price start----------------------*/
 .price{
+  margin-top: 5px;
   @extend %wrap-100p;
   background: #ffffff;
   border-top: 1px solid $border-color;
@@ -392,6 +393,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .price{
+    margin-top: 10px;
+  }
   .price-class{
     padding: 16px 0;
     p{
