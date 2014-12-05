@@ -418,50 +418,51 @@
       height: 68px;
     }
   }
-}
-.progress{
-  height: 12px;
-  li{
-    width: 14.28%;
+  .progress{
     height: 12px;
+    li{
+      width: 14.28%;
+      height: 12px;
+    }
+  }
+  .level-info{
+    position: relative;
+    margin: 24px auto 28px auto;
+    padding-bottom: 8px;
+    height: 40px;
+    line-height: 44px;
+    font-size: 2.2em;
+    &:before{
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: -34px;
+      left: 50%;
+      margin-left: -18px;
+      width: 0;
+      height: 0;
+      border: 18px solid transparent;
+      border-bottom: 18px solid $color-red;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: -36px;
+      left: 50%;
+      margin-left: -18px;
+      width: 0;
+      height: 0;
+      border: 18px solid transparent;
+      border-bottom: 18px solid $border-color;
+    }
+    em{
+      color: #f4f712;
+      font-size: 1.4em;
+    }
   }
 }
-.level-info{
-  position: relative;
-  margin: 24px auto 28px auto;
-  padding-bottom: 8px;
-  height: 40px;
-  line-height: 44px;
-  font-size: 2.2em;
-  &:before{
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: -34px;
-    left: 50%;
-    margin-left: -18px;
-    width: 0;
-    height: 0;
-    border: 18px solid transparent;
-    border-bottom: 18px solid $color-red;
-  }
-  &:after{
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: -36px;
-    left: 50%;
-    margin-left: -18px;
-    width: 0;
-    height: 0;
-    border: 18px solid transparent;
-    border-bottom: 18px solid $border-color;
-  }
-  em{
-    color: #f4f712;
-    font-size: 1.4em;
-  }
-}
+
 /*-----------------------price end----------------------*/
 
 /*-----------------------number start----------------------*/
