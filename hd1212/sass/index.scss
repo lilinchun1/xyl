@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+/*!
+ * Created with IntelliJ IDEA. 
+ * User: llc 
+ * Date: 2014/12/1 
+ * Time: 9:53 
+ * To change this template use File | Settings | File Templates. 
+ */
+
+@import "rest";
+
+/*-----------------------header start----------------------*/
+.body-wrap{
+  @extend %wrap-100p;
+  background: #f5f5f5;
+}
+.header{
+  position: relative;
+  @extend %wrap-100p;
+  .head-pic{
+    @extend %wrap-100p;
+  }
+  .imgbox{
+    @extend %wrap-100p;
+  }
+}
+.countdown{
+  @extend %wrap-100p;
+  margin-bottom: 5px;
+}
+.countdown-tt{
+  margin: 0 auto;
+  width: 46%;
+  h2{
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 1.4em;
+    color: $color-red;
+    &:after{
+      content: "";
+      width: 65px;
+      height: 1px;
+      background: $color-red;
+      position: absolute;
+      top: 11px;
+      right: -54px;
+    }
+    &:before{
+      content: "";
+      width: 70px;
+      height: 1px;
+      background: $color-red;
+      position: absolute;
+      top: 11px;
+      left: -60px;
+    }
+  }
+}
+.countdown-con{
+  height: 28px;
+  .clock{
+    margin: 0 auto;
+    //width: 78%;
+    width: 250px;
+    overflow: hidden;
+    li{
+      float: left;
+      height: 28px;
+    }
+    .date{
+      width: 40px;
+      line-height: 28px;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 6px 6px 6px #860404;
+      text-indent: 4px;
+      letter-spacing: 7px;
+      font-size: 2.2em;
+      background: #fff image-url("clock-bg.png") 0 0 no-repeat;
+      -webkit-background-size: 40px auto;
+      background-size: 40px auto;
+    }
+    .date-wz{
+      padding: 0 2px;
+      font-size: 1.2em;
+      color: $color-red;
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .countdown-tt{
+    margin: 0 auto;
+    width: 46%;
+    h2{
+      height: 44px;
+      line-height: 44px;
+      font-size: 2.2em;
+      &:after{
+        content: "";
+        width: 150px;
+        top: 20px;
+        right: -90px;
+      }
+      &:before{
+        width: 150px;
+        top: 20px;
+        left: -90px;
+      }
+    }
+  }
+  .countdown-con{
+    height: 56px;
+    .clock{
+      //width: 48%;
+      width: 490px;
+      li{
+        height: 56px;
+      }
+      .date{
+        width: 80px;
+        line-height: 56px;
+        text-align: center;
+        color: #ffffff;
+        text-indent: 8px;
+        letter-spacing: 18px;
+        font-size: 4em;
+        background: #fff image-url("clock-bg.png") 0 0 no-repeat;
+        -webkit-background-size: 80px auto;
+        background-size: 80px auto;
+      }
+      .date-wz{
+        padding: 0 6px;
+        font-size: 2em;
+        color: $color-red;
+        line-height: 80px;
+      }
+    }
+  }
+}
+/*-----------------------header end----------------------*/
+
+/*-----------------------slider start----------------------*/
+.slider{
+  margin-top: 7px;
+  @extend %wrap-100p;
+  height: 215px;
+  background: #ffffff;
+}
+.slider-tt{
+  height: 37px;
+  line-height: 37px;
+  font-size: 1.4em;
+  text-align: center;
+  em{
+    color: $color-red;}
+}
+.slider-con{
+  height: 178px;
+}
+/*-----------------------slider end----------------------*/
+
+/*-----------------------price start----------------------*/
+.price{
+  @extend %wrap-100p;
+  background: #ffffff;
+  border-top: 1px solid $border-color;
+}
+.price-class{
+  padding: 8px 0;
+  @extend %wrap-95p;
+  border-bottom: 1px solid $border-color;
+  li{
+    width: 33%;
+    float: left;
+    text-align: center;
+    &:nth-of-type(2){
+      border-left: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+    }
+  }
+  p{
+    font-size: 1.4em;
+  }
+  .c333{
+    color: $font-color333;
+  }
+  .cf57520{
+    color: #f57520;
+  }
+  .cred{
+    color: $color-red;
+  }
+}
+.level{
+  margin: 0 auto;
+  width: 95%;
+  padding-top: 13px;
+  height: 24px;
+  li{
+    position: relative;
+    float: left;
+    width: 14.28%;
+  }
+  span{
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    width: 10px;
+    height: 22px;
+    font-size: 1em;
+    color: #ffffff;
+    display: block;
+    line-height: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .level-left{
+    font-weight: bold;
+    font-size: 1.4em;
+    color: $color-red;
+    line-height: 40px;
+  }
+  .level-right{
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #000000;
+    line-height: 40px;
+  }
+  .icon-bq{
+    width: 35px;
+    height: 34px;
+  }
+  .active-icon{
+    .icon-bq{
+      fill: $color-red;
+    }
+  }
+}
+.progress{
+  @extend %wrap-95p;
+  height: 6px;
+  background: #282f32;
+  li{
+    width: 14.28%;
+    height: 6px;
+    background: $color-red;
+  }
+}
+.level-info{
+  position: relative;
+  margin: 12px auto 14px auto;
+  padding-bottom: 4px;
+  width: 70%;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid $border-color;
+  color: #ffffff;
+  background-color: $color-red;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.2em;
+  &:before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -17px;
+    left: 50%;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom: 9px solid $color-red;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -18px;
+    left: 50%;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom: 9px solid $border-color;
+  }
+  em{
+    color: #f4f712;
+    font-size: 1.4em;
+  }
+}
+/*-----------------------price end----------------------*/
+
+/*-----------------------number start----------------------*/
+.statistics{
+  margin-top: 5px;
+  @extend %wrap-100p;
+  background: #ffffff;
+  border-top: 1px solid $border-color;
+  p{
+    @extend %wrap-95p;
+    height: 54px;
+    line-height: 54px;
+    font-size: 1.4em;
+  }
+}
+.statistics-number{
+  @extend %wrap-95p;
+  height: 54px;
+  border-bottom: 1px solid $border-color;
+  .statistics-number-left{
+    float: left;
+    font-size: 1.4em;
+    line-height: 54px;
+  }
+  .statistics-number-right{
+    float: right;
+    font-size: 1.4em;
+    line-height: 54px;
+  }
+}
+/*-----------------------number end----------------------*/
+
+/*-----------------------enter-shop start----------------------*/
+.enter-shop{
+  margin-top: 5px;
+  @extend %wrap-100p;
+  background: #ffffff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.4em;
+  a{
+    display: block;
+    @extend %wrap-95p;
+  }
+  .icon-iconfont-iconfontshop{
+    margin-top: 11px;
+    margin-right: 8px;
+    float: left;
+    width: 16px;
+    height: 16px;
+  }
+  span{
+    float: right;
+    color: $color-red;
+  }
+  .icon-iconfont-right{
+    margin-top: 8px;
+    float: right;
+    width: 22px;
+    height: 22px;
+    fill: $color-red;
+  }
+}
+/*-----------------------enter-shop end----------------------*/
+
+/*-----------------------introduce start----------------------*/
+.introduce{
+  @extend %wrap-100p;
+  border-top: 1px solid $border-color;
+  background: #ffffff;
+    h2{
+      @extend %wrap-95p;
+      height: 30px;
+      line-height: 30px;
+      font-size: 1.6em;
+      text-indent: 2em;
+      border-bottom: 1px solid $border-color;
+    }
+  p{
+    padding: 5px;
+    @extend %wrap-95p;
+    font-size: 1.4em;
+  }
+}
+/*-----------------------introduce end----------------------*/

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>排行榜</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/personage.css" rel="stylesheet" />
+    <script>
+        <!--
+        /*更换显示样式*/
+        function setTab(name,cursel,n){
+            for(i=1;i<=n;i++){
+                var menu=document.getElementById(name+i);
+                var con=document.getElementById("con_"+name+"_"+i);
+                menu.className=i==cursel?"hover":"";
+                con.style.display=i==cursel?"block":"none";}}
+        //-->
+    </script>
+    <style>
+        ul,li{margin:0;padding:0;}
+        @media screen and (min-width:240px) {
+            html, body .slider{
+                font-size:9px;
+            }
+        }
+        @media screen and (min-width:320px) {
+            html, body .slider{
+                font-size:12px;
+            }
+        }
+        @media screen and (min-width:480px) {
+            html, body .slider{
+                font-size:18px;
+            }
+        }
+        @media screen and (min-width:640px) {
+            html, body .slider{
+                font-size:24px;
+            }
+        }
+        div.imgbox{width:inherit;overflow:hidden;margin:0 auto;height:auto}
+        div.imgbox ul{}
+        div.imgbox ul li{float:left;text-align:center;height:auto}
+        div.imgbox ul li img{width:100%;height:auto}
+    </style>
+</head>
+<body>
+<div class="min">
+    <!--滚动-->
+    <section class="slider" style="">
+        <div class="imgbox">
+            <ul style="width: 100%">
+                <li>
+                    <img src="img/img_per_0.jpg"></img>
+                </li>
+                <li>
+                    <img src="img/img_per_1.png"></img>
+                </li>
+                <li>
+                    <img src="img/img_per_2.png"></img>
+                </li>
+                <li>
+                    <img src="img/img_per_3.png"></img>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--信息-->
+    <div class="top">
+
+
+        <!--选项卡-->
+
+        <div id="Tab1">
+            <div class="Menubox">
+                <ul>
+                    <li class="Menubox_1">个人销售榜</li>
+                    <li  style="width:33.33333333333%;">团队销售榜</li>
+                    <li>人气排行榜</li>
+
+                </ul>
+            </div>
+            <div class="Contentbox">
+                <div class="con_one_1_0">
+                    本榜单以活动期间每个参与活动的微媒店铺业绩进行排名。
+                </div>
+                <div style="display:none"class="con_one_1_0">本榜单以活动期间每个参加活动的微媒，其直属团队的业绩进行排名。</div>
+                <div style="display:none"class="con_one_1_0">本榜单以活动期间每个参加活动的微媒，其直属团队的业绩进行排名。</div>
+
+            </div>
+        </div>
+        <div class="stripBox">
+            <div class="strip"></div>
+            <div class="strip_char">
+                <a href="#">
+                    <img src="img/img_ranking_1.png">
+                </a>
+            </div>
+        </div>
+
+        <!--列表-->
+        <div class="surfaceBox" >
+            <ul class="surface">
+                <li class="count_1">244</li>
+                <li class="count"><img src="img/img_0.jpg "/></li>
+                <li class="attention">
+                    <div>用户名&nbsp;小店业绩啊啊啊啊啊啊啊啊啊啊啊啊啊<div>
+                </li>
+                <li style="float:right;">
+                    <div class="money">￥&nbsp;200</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="surfaceBox" >
+            <ul class="surface">
+                <li class="count_1">244</li>
+                <li class="count"><img src="img/img_0.jpg " /></li>
+                <li class="attention">
+                    <div>用户名&nbsp;小店业绩啊啊啊啊啊啊啊啊啊啊啊啊啊<div>
+                </li>
+                <li style="float:right;">
+                    <div class="money">￥&nbsp;2000</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="surfaceBox" >
+            <ul class="surface">
+                <li class="count_1">12</li>
+                <li class="count"><img src="img/img_0.jpg " /></li>
+                <li class="attention">
+                    <div>用户名&nbsp;小店业绩啊啊啊啊啊啊啊啊啊啊啊啊啊<div>
+                </li>
+                <li style="float:right;">
+                    <div class="money">￥&nbsp;200000</div>
+                </li>
+            </ul>
+        </div>
+        <div class="surfaceBox" >
+            <ul class="surface">
+                <li class="count_1">1221</li>
+                <li class="count"><img src="img/img_0.jpg " /></li>
+                <li class="attention">
+                    <div>用户名&nbsp;小店业绩啊啊啊啊啊啊啊啊啊啊啊啊啊<div>
+                </li>
+                <li style="float:right;">
+                    <div class="money">￥&nbsp;2000000</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../v11/js/zepto.min.js"></script>
+<!--轮播图js-->
+<script type="text/javascript" src="js/zepto_mggscrollimg.js"></script>
+<script>
+    $(function(){
+        var scrollImg = $.mggScrollImg('.imgbox ul',{
+            loop : true,//循环切换
+            auto : true,//自动切换
+            callback : function(ind){//这里传过来的是索引值
+                $('#page').text(ind+1);
+            }
+        });
+        //自适应宽度
+        $(".imgbox ul li").css('width',$(".imgbox").css("width"));
+    });
+</script>
+</html>

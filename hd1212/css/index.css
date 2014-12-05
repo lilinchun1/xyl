@@ -1,0 +1,563 @@
+@charset "UTF-8";
+/*
+ * Created with IntelliJ IDEA. 
+ * User: llc 
+ * Date: 2014/12/1 
+ * Time: 9:53 
+ * To change this template use File | Settings | File Templates. 
+ */
+/*-----------------------public start----------------------*/
+/* line 11, ../sass/_rest.scss */
+.mod-foot-nav, .body-wrap, .header, .header .head-pic, .header .imgbox, .countdown, .slider, .price, .statistics, .enter-shop, .introduce {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden; }
+
+/* line 16, ../sass/_rest.scss */
+.price-class, .progress, .statistics p, .statistics-number, .enter-shop a, .introduce h2, .introduce p {
+  margin: 0 auto;
+  width: 95.3125%;
+  overflow: hidden; }
+
+/*实心按钮*/
+/*空心btn*/
+/*加减数量item*/
+/* line 56, ../sass/_rest.scss */
+.select-number {
+  margin: 13px 0 0 8px;
+  float: left;
+  width: 88px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #d8d8d8;
+  font-size: 1.4em; }
+  /* line 65, ../sass/_rest.scss */
+  .select-number span {
+    width: 24px;
+    height: 25px;
+    float: left; }
+  /* line 70, ../sass/_rest.scss */
+  .select-number .left {
+    border-right: 1px solid #d8d8d8; }
+  /* line 73, ../sass/_rest.scss */
+  .select-number .right {
+    border-left: 1px solid #d8d8d8; }
+  /* line 76, ../sass/_rest.scss */
+  .select-number .select-number-input {
+    float: left;
+    width: 38px;
+    height: 25px;
+    border: 0 none;
+    text-align: center; }
+
+@media screen and (min-width: 768px) {
+  /* line 85, ../sass/_rest.scss */
+  .select-number {
+    margin: 26px 0 0 16px;
+    width: 176px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2.2em; }
+    /* line 91, ../sass/_rest.scss */
+    .select-number span {
+      width: 48px;
+      height: 50px; }
+    /* line 95, ../sass/_rest.scss */
+    .select-number .select-number-input {
+      width: 76px;
+      height: 50px; } }
+/*-----------------------public end----------------------*/
+/* line 104, ../sass/_rest.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 109, ../sass/_rest.scss */
+html {
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  height: 100%; }
+
+/* line 117, ../sass/_rest.scss */
+body {
+  line-height: 1.5;
+  color: #666;
+  height: 100%;
+  background: #fff;
+  -webkit-overflow-scrolling: touch; }
+
+/* line 125, ../sass/_rest.scss */
+a {
+  color: #666;
+  text-decoration: none;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 132, ../sass/_rest.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/* line 136, ../sass/_rest.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 141, ../sass/_rest.scss */
+h1, h2, h3, h4, h5, h6, em, span, i, strong {
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 146, ../sass/_rest.scss */
+img {
+  width: 100%;
+  max-width: 100%; }
+
+/* line 151, ../sass/_rest.scss */
+li {
+  list-style-type: none; }
+
+/* line 154, ../sass/_rest.scss */
+button {
+  border: 0 none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* line 160, ../sass/_rest.scss */
+input[type="text"] {
+  outline: 0 none;
+  -webkit-tap-highlight-color: transparent;
+  /*ios私有*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/*屏蔽苹果手机样式 */
+/* line 169, ../sass/_rest.scss */
+input[type="button"], input[type="submit"], input[type="reset"] {
+  -webkit-appearance: none; }
+
+/*-----------------------footer----------------------*/
+/* line 174, ../sass/_rest.scss */
+.footer {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #a7a7a7; }
+
+/* line 181, ../sass/_rest.scss */
+.mod-foot-nav {
+  height: 50px;
+  background: #333333;
+  border-top: 1px solid #000; }
+
+/* line 188, ../sass/_rest.scss */
+.foot-nav-list li {
+  position: relative;
+  float: left;
+  width: 25%;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 7; }
+/* line 197, ../sass/_rest.scss */
+.foot-nav-list .foot-nav-icon {
+  fill: currentColor;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  margin-left: -13px;
+  width: 26px;
+  height: 26px;
+  display: block; }
+/* line 207, ../sass/_rest.scss */
+.foot-nav-list a {
+  color: #ffffff; }
+/* line 210, ../sass/_rest.scss */
+.foot-nav-list .flg-icon a {
+  color: #e02d2a; }
+
+@media screen and (min-width: 768px) {
+  /* line 216, ../sass/_rest.scss */
+  .footer {
+    height: 80px;
+    line-height: 80px;
+    font-size: 2em; }
+
+  /* line 221, ../sass/_rest.scss */
+  .mod-foot-nav {
+    height: 100px; }
+
+  /* line 225, ../sass/_rest.scss */
+  .foot-nav-list li {
+    font-size: 2em;
+    line-height: 8; }
+  /* line 229, ../sass/_rest.scss */
+  .foot-nav-list .foot-nav-icon {
+    fill: currentColor;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    margin-left: -26px;
+    width: 52px;
+    height: 52px;
+    display: block; } }
+/*-----------------------foot end----------------------*/
+/*-----------------------header start----------------------*/
+/* line 14, ../sass/index.scss */
+.body-wrap {
+  background: #f5f5f5; }
+
+/* line 18, ../sass/index.scss */
+.header {
+  position: relative; }
+
+/* line 28, ../sass/index.scss */
+.countdown {
+  margin-bottom: 5px; }
+
+/* line 32, ../sass/index.scss */
+.countdown-tt {
+  margin: 0 auto;
+  width: 46%; }
+  /* line 35, ../sass/index.scss */
+  .countdown-tt h2 {
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 1.4em;
+    color: #e02d2a; }
+    /* line 42, ../sass/index.scss */
+    .countdown-tt h2:after {
+      content: "";
+      width: 65px;
+      height: 1px;
+      background: #e02d2a;
+      position: absolute;
+      top: 11px;
+      right: -54px; }
+    /* line 51, ../sass/index.scss */
+    .countdown-tt h2:before {
+      content: "";
+      width: 70px;
+      height: 1px;
+      background: #e02d2a;
+      position: absolute;
+      top: 11px;
+      left: -60px; }
+
+/* line 62, ../sass/index.scss */
+.countdown-con {
+  height: 28px; }
+  /* line 64, ../sass/index.scss */
+  .countdown-con .clock {
+    margin: 0 auto;
+    width: 250px;
+    overflow: hidden; }
+    /* line 69, ../sass/index.scss */
+    .countdown-con .clock li {
+      float: left;
+      height: 28px; }
+    /* line 73, ../sass/index.scss */
+    .countdown-con .clock .date {
+      width: 40px;
+      line-height: 28px;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 6px 6px 6px #860404;
+      text-indent: 4px;
+      letter-spacing: 7px;
+      font-size: 2.2em;
+      background: white url('../img/clock-bg.png?1417482390') 0 0 no-repeat;
+      -webkit-background-size: 40px auto;
+      background-size: 40px auto; }
+    /* line 86, ../sass/index.scss */
+    .countdown-con .clock .date-wz {
+      padding: 0 2px;
+      font-size: 1.2em;
+      color: #e02d2a;
+      line-height: 40px; }
+
+@media screen and (min-width: 768px) {
+  /* line 96, ../sass/index.scss */
+  .countdown-tt {
+    margin: 0 auto;
+    width: 46%; }
+    /* line 99, ../sass/index.scss */
+    .countdown-tt h2 {
+      height: 44px;
+      line-height: 44px;
+      font-size: 2.2em; }
+      /* line 103, ../sass/index.scss */
+      .countdown-tt h2:after {
+        content: "";
+        width: 150px;
+        top: 20px;
+        right: -90px; }
+      /* line 109, ../sass/index.scss */
+      .countdown-tt h2:before {
+        width: 150px;
+        top: 20px;
+        left: -90px; }
+
+  /* line 116, ../sass/index.scss */
+  .countdown-con {
+    height: 56px; }
+    /* line 118, ../sass/index.scss */
+    .countdown-con .clock {
+      width: 490px; }
+      /* line 121, ../sass/index.scss */
+      .countdown-con .clock li {
+        height: 56px; }
+      /* line 124, ../sass/index.scss */
+      .countdown-con .clock .date {
+        width: 80px;
+        line-height: 56px;
+        text-align: center;
+        color: #ffffff;
+        text-indent: 8px;
+        letter-spacing: 18px;
+        font-size: 4em;
+        background: white url('../img/clock-bg.png?1417482390') 0 0 no-repeat;
+        -webkit-background-size: 80px auto;
+        background-size: 80px auto; }
+      /* line 136, ../sass/index.scss */
+      .countdown-con .clock .date-wz {
+        padding: 0 6px;
+        font-size: 2em;
+        color: #e02d2a;
+        line-height: 80px; } }
+/*-----------------------header end----------------------*/
+/*-----------------------slider start----------------------*/
+/* line 148, ../sass/index.scss */
+.slider {
+  margin-top: 7px;
+  height: 215px;
+  background: #ffffff; }
+
+/* line 154, ../sass/index.scss */
+.slider-tt {
+  height: 37px;
+  line-height: 37px;
+  font-size: 1.4em;
+  text-align: center; }
+  /* line 159, ../sass/index.scss */
+  .slider-tt em {
+    color: #e02d2a; }
+
+/* line 162, ../sass/index.scss */
+.slider-con {
+  height: 178px; }
+
+/*-----------------------slider end----------------------*/
+/*-----------------------price start----------------------*/
+/* line 168, ../sass/index.scss */
+.price {
+  background: #ffffff;
+  border-top: 1px solid #d8d8d8; }
+
+/* line 173, ../sass/index.scss */
+.price-class {
+  padding: 8px 0;
+  border-bottom: 1px solid #d8d8d8; }
+  /* line 177, ../sass/index.scss */
+  .price-class li {
+    width: 33%;
+    float: left;
+    text-align: center; }
+    /* line 181, ../sass/index.scss */
+    .price-class li:nth-of-type(2) {
+      border-left: 1px solid #d8d8d8;
+      border-right: 1px solid #d8d8d8; }
+  /* line 186, ../sass/index.scss */
+  .price-class p {
+    font-size: 1.4em; }
+  /* line 189, ../sass/index.scss */
+  .price-class .c333 {
+    color: #333333; }
+  /* line 192, ../sass/index.scss */
+  .price-class .cf57520 {
+    color: #f57520; }
+  /* line 195, ../sass/index.scss */
+  .price-class .cred {
+    color: #e02d2a; }
+
+/* line 199, ../sass/index.scss */
+.level {
+  margin: 0 auto;
+  width: 95%;
+  padding-top: 13px;
+  height: 24px; }
+  /* line 204, ../sass/index.scss */
+  .level li {
+    position: relative;
+    float: left;
+    width: 14.28%; }
+  /* line 209, ../sass/index.scss */
+  .level span {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    width: 10px;
+    height: 22px;
+    font-size: 1em;
+    color: #ffffff;
+    display: block;
+    line-height: 12px;
+    text-align: center;
+    font-weight: bold; }
+  /* line 222, ../sass/index.scss */
+  .level .level-left {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #e02d2a;
+    line-height: 40px; }
+  /* line 228, ../sass/index.scss */
+  .level .level-right {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #000000;
+    line-height: 40px; }
+  /* line 234, ../sass/index.scss */
+  .level .icon-bq {
+    width: 35px;
+    height: 34px; }
+  /* line 239, ../sass/index.scss */
+  .level .active-icon .icon-bq {
+    fill: #e02d2a; }
+
+/* line 244, ../sass/index.scss */
+.progress {
+  height: 6px;
+  background: #282f32; }
+  /* line 248, ../sass/index.scss */
+  .progress li {
+    width: 14.28%;
+    height: 6px;
+    background: #e02d2a; }
+
+/* line 254, ../sass/index.scss */
+.level-info {
+  position: relative;
+  margin: 12px auto 14px auto;
+  padding-bottom: 4px;
+  width: 70%;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #d8d8d8;
+  color: #ffffff;
+  background-color: #e02d2a;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.2em; }
+  /* line 267, ../sass/index.scss */
+  .level-info:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -17px;
+    left: 50%;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom: 9px solid #e02d2a; }
+  /* line 279, ../sass/index.scss */
+  .level-info:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -18px;
+    left: 50%;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom: 9px solid #d8d8d8; }
+  /* line 291, ../sass/index.scss */
+  .level-info em {
+    color: #f4f712;
+    font-size: 1.4em; }
+
+/*-----------------------price end----------------------*/
+/*-----------------------number start----------------------*/
+/* line 299, ../sass/index.scss */
+.statistics {
+  margin-top: 5px;
+  background: #ffffff;
+  border-top: 1px solid #d8d8d8; }
+  /* line 304, ../sass/index.scss */
+  .statistics p {
+    height: 54px;
+    line-height: 54px;
+    font-size: 1.4em; }
+
+/* line 311, ../sass/index.scss */
+.statistics-number {
+  height: 54px;
+  border-bottom: 1px solid #d8d8d8; }
+  /* line 315, ../sass/index.scss */
+  .statistics-number .statistics-number-left {
+    float: left;
+    font-size: 1.4em;
+    line-height: 54px; }
+  /* line 320, ../sass/index.scss */
+  .statistics-number .statistics-number-right {
+    float: right;
+    font-size: 1.4em;
+    line-height: 54px; }
+
+/*-----------------------number end----------------------*/
+/*-----------------------enter-shop start----------------------*/
+/* line 329, ../sass/index.scss */
+.enter-shop {
+  margin-top: 5px;
+  background: #ffffff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.4em; }
+  /* line 336, ../sass/index.scss */
+  .enter-shop a {
+    display: block; }
+  /* line 340, ../sass/index.scss */
+  .enter-shop .icon-iconfont-iconfontshop {
+    margin-top: 11px;
+    margin-right: 8px;
+    float: left;
+    width: 16px;
+    height: 16px; }
+  /* line 347, ../sass/index.scss */
+  .enter-shop span {
+    float: right;
+    color: #e02d2a; }
+  /* line 351, ../sass/index.scss */
+  .enter-shop .icon-iconfont-right {
+    margin-top: 8px;
+    float: right;
+    width: 22px;
+    height: 22px;
+    fill: #e02d2a; }
+
+/*-----------------------enter-shop end----------------------*/
+/*-----------------------introduce start----------------------*/
+/* line 362, ../sass/index.scss */
+.introduce {
+  border-top: 1px solid #d8d8d8;
+  background: #ffffff; }
+  /* line 366, ../sass/index.scss */
+  .introduce h2 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.6em;
+    text-indent: 2em;
+    border-bottom: 1px solid #d8d8d8; }
+  /* line 374, ../sass/index.scss */
+  .introduce p {
+    padding: 5px;
+    font-size: 1.4em; }
+
+/*-----------------------introduce end----------------------*/
