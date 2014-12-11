@@ -9,6 +9,7 @@
     <meta content="telephone=no" name="format-detection">
     <meta name="format-detection" content="telephone=no">
     <link href="css/personage.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <script>
         <!--
         /*更换显示样式*/
@@ -21,31 +22,29 @@
         //-->
     </script>
     <style>
-        ul,li{margin:0;padding:0;}
-        @media screen and (min-width:240px) {
-            body .slider{
-                font-size:9px;
-            }
+        .imgbox {
+            position: relative;
+            width: inherit;
+            overflow: hidden;
+            margin: 0 auto;
+            height: auto;
+            max-width: 768px
         }
-        @media screen and (min-width:320px) {
-            body .slider{
-                font-size:12px;
-            }
+
+        .imgbox ul {
+            width: 100%;
         }
-        @media screen and (min-width:480px) {
-            body .slider{
-                font-size:18px;
-            }
+
+        .imgbox ul li {
+            float: left;
+            text-align: center;
+            height: auto;
         }
-        @media screen and (min-width:640px) {
-            body .slider{
-                font-size:24px;
-            }
+
+        .imgbox ul li img {
+            width: 780px;
+            height: auto
         }
-        div.imgbox{width:inherit;overflow:hidden;margin:0 auto;height:auto}
-        div.imgbox ul{}
-        div.imgbox ul li{float:left;text-align:center;height:auto}
-        div.imgbox ul li img{width:100%;height:auto}
     </style>
 </head>
 <body>
@@ -78,17 +77,17 @@
         <div id="Tab1">
             <div class="Menubox">
                 <ul>
-                    <li class="Menubox_1">个人销售榜</li>
-                    <li  style="width:33.33333333333%;">团队销售榜</li>
-                    <li>人气排行榜</li>
+                    <li><a href="#"  class="Menubox_1">个人销售榜</a> </li>
+                    <li  style="width:33.33333333333%;"><a href="ranking_1.html">团队销售榜</a></li>
+                    <li><a href="ranking_2.html">人气排行榜</a></li>
 
                 </ul>
             </div>
             <div class="Contentbox">
-                <div class="con_one_1_0">
+                <div style="display:none" class="con_one_1_0">
                     本榜单以活动期间每个参与活动的微媒店铺业绩进行排名。
                 </div>
-                <div style="display:none"class="con_one_1_0">本榜单以活动期间每个参加活动的微媒，其直属团队的业绩进行排名。</div>
+                <div class="con_one_1_0">本榜单以活动期间每个参加活动的微媒，其直属团队的业绩进行排名。</div>
                 <div style="display:none"class="con_one_1_0">本榜单以活动期间每个参加活动的微媒，其直属团队的业绩进行排名。</div>
 
             </div>
@@ -98,6 +97,7 @@
             <div class="strip_char">
                 <a href="#">
                     <img src="img/img_ranking_1.png">
+
                 </a>
             </div>
         </div>
@@ -159,16 +159,16 @@
 <!--轮播图js-->
 <script type="text/javascript" src="js/zepto_mggscrollimg.js"></script>
 <script>
-    (function(){
+    $(function(){
         var scrollImg = $.mggScrollImg('.imgbox ul',{
             loop : true,//循环切换
-            auto : false,//自动切换
+            auto : true,//自动切换
             callback : function(ind){//这里传过来的是索引值
                 $('#page').text(ind+1);
             }
         });
         //自适应宽度
-        $(".imgbox ul li").css('width',$(".imgbox").css("width"));
-    })()
+        $(".imgbox ul li").css('width', $(".imgbox").css("width"));
+    });
 </script>
 </html>

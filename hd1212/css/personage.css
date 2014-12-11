@@ -42,7 +42,7 @@ a{
 
 }
 .img_long{
-    background: url(../img/img_0.jpg) #fff no-repeat center;
+    background: #fff;
     background-size: 100%;
     width: 70px;
     height: 70px;
@@ -54,6 +54,18 @@ a{
     float: left;
     margin-left: 10px;
     margin-right: 10px;
+
+}
+.img_long img{
+    background-size: 100%;
+    width: 70px;
+    height: 70px;
+    border: 2px #ffffff solid;
+    border-radius: 60px;
+    -o-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    float: left;
 
 }
 .charBox{
@@ -115,8 +127,10 @@ a{
     -webkit-box-shadow:0px 1px 3px #d1d1d1;
     -moz-box-shadow:0px 1px 3px #d1d1d1;
     box-shadow:0px 1px 3px #d1d1d1;}
-.per_imgBox{position: relative;
-    margin: 0;
+.per_imgBox{
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
     padding: 0;}
 .per_imgBox img{
     width: 100%;
@@ -158,7 +172,7 @@ a{
 .per_king:first-child{
     border-top: none;}
 .per_king_img{
-    background: url(../img/img_0.jpg) #fff no-repeat center;
+    background: #fff ;
     background-size: 100%;
     width: 40px;
     height: 40px;
@@ -171,6 +185,18 @@ a{
 
 
 }
+.per_king_img img{
+    background:#fff ;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    -o-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    float: left;
+}
+
 .per_king_char{
     color: #494949;
     font-size: 12px;
@@ -263,18 +289,28 @@ a{
     border-bottom: 5px solid #ffffff;
 
 }
-.Menubox .menubox_1{
-    padding:0px;
-    color:#5a5c61;
+.Menubox a{
+    width: 100%;
+    float:left;
+    display:block;
+    cursor:pointer;
+    text-align:center;
+    font-weight:bold;
+
+    font-size: 14px;
+    background:#5a5c61;
+    color:#fff;
+    height:35px;
+    line-height:35px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background:#e5e5e5;
-    height: 35px;
-    border-bottom: 5px solid #e5e5e5;}
+    border-bottom: 5px solid #ffffff;
+
+}
 .Menubox li:first-child{
     margin-left: 0%;
 }
-.Menubox li.hover{
+.Menubox a:hover{
     padding:0px;
     color:#5a5c61;
     border-top-left-radius: 10px;
@@ -283,6 +319,19 @@ a{
     height: 35px;
     border-bottom: 5px solid #e5e5e5;
 }
+.Menubox .Menubox_1{
+    padding:0px;
+    color:#5a5c61;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background:#e5e5e5;
+    height: 35px;
+    border-bottom: 5px solid #e5e5e5;
+}
+.Menubox li:first-child{
+    margin-left: 0%;
+}
+
 .Contentbox{
     clear:both;
     margin-top:0px;
@@ -296,6 +345,7 @@ a{
 }
 .con_one_1_0{
     width: 85%;
+    font-size: 14px;
     margin: 0 auto;
     background:#ffffff;
     -webkit-box-shadow:0 1px 1px #747474;
@@ -361,11 +411,12 @@ a{
     line-height: 45px;
     color: #494949;
     float: left;
-    width: 35%;
+    font-size: 12px;
+    width: 45%;
     text-align: center;
 }
 .my_king li:first-child{
-    width: 65%;}
+    width: 55%;}
 /*-----------------报名页----------------------------*/
 .applyBox{
 
@@ -380,11 +431,39 @@ width: 40%;
     position: fixed;
     bottom: 25px;
 }
+/*---------------------------------------------*/
+.null{
+    width:60%;
+    margin: 0 auto;
+}
+
+.null_char{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: #666;
+    line-height: 20px;
+    font-size: 12px;
+}
+/*---------------------------------------------*/
 @media screen and (min-width: 320px) {
 
     .strip_char{
         position: absolute;
         top:-15px;
+        left:25%;
+        right:25%;
+        width: 50%;
+    }
+
+}
+@media screen and (min-width: 640px) {
+    .min{
+        width: 640px;
+        margin: 0 auto;}
+    .strip_char{
+        position: absolute;
+        top:-35px;
         left:25%;
         right:25%;
         width: 50%;
@@ -400,20 +479,18 @@ width: 40%;
         right:25%;
         width: 50%;
     }
+    .null{
+        width:40%;
+        margin: 0 auto;
+    }
 
-}
-@media screen and (min-width: 640px) {
-    .min{
-        width: 640px;
-        margin: 0 auto;}
-    .strip_char{
-        position: absolute;
-        top:-15px;
-        left:35%;
-        right:35%;
-        width: 30%;
+    .null_char{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        color: #666;
+        line-height: 34px;
+        font-size: 24px;
     }
 
 }
-
-

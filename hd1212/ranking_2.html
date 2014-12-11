@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>排行榜</title>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta content="telephone=no" name="format-detection">
     <meta name="format-detection" content="telephone=no">
     <link href="css/personage.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <script>
         <!--
         /*更换显示样式*/
@@ -22,67 +22,51 @@
         //-->
     </script>
     <style>
-
-        div.imgbox{width:100%;height:7rem;overflow:hidden;margin:0 auto;}
-        div.imgbox ul{clear:both;}
-        div.imgbox ul li{float:left;width:100%;overflow:hidden;text-align:center;}
-        div.imgbox ul li img{width:100%}
-        ul,li{margin:0;padding:0;}
-        @media screen and (min-width:240px) {
-            html, body .slider-con{
-                font-size:9px;
-            }
-        }
-        @media screen and (min-width:320px) {
-            html, body .slider-con{
-                font-size:12px;
-            }
-            div.imgbox{width:100%;height:14rem;overflow:hidden;margin:0 auto;}
-
-        }
-        @media screen and (min-width:480px) {
-            html, body .slider-con{
-                font-size:18px;
-            }
-            div.imgbox{width:100%;height:13rem;overflow:hidden;margin:0 auto;}
-        }
-        @media screen and (min-width:640px) {
-            html, body .slider-con{
-                font-size:24px;
-            }
-            div.imgbox{width:100%;height:11rem;overflow:hidden;margin:0 auto;}
-        }
-        @media screen and (min-width:960px) {
-            html, body .slider-con{
-                font-size:36px;
-            }
-            div.imgbox{width:100%;height:7rem;overflow:hidden;margin:0 auto;}
+        .imgbox {
+            position: relative;
+            width: inherit;
+            overflow: hidden;
+            margin: 0 auto;
+            height: auto;
+            max-width: 768px
         }
 
+        .imgbox ul {
+            width: 100%;
+        }
+
+        .imgbox ul li {
+            float: left;
+            text-align: center;
+            height: auto;
+        }
+
+        .imgbox ul li img {
+            width: 780px;
+            height: auto
+        }
     </style>
 </head>
 <body>
 <div class="min">
     <!--滚动-->
-    <section class="slider">
-        <section class="slider-con">
-            <div class="imgbox">
-                <ul>
-                    <li>
-                        <img src="img/img_per_0.jpg"></img>
-                    </li>
-                    <li>
-                        <img src="img/img_per_1.png"></img>
-                    </li>
-                    <li>
-                        <img src="img/img_per_2.png"></img>
-                    </li>
-                    <li>
-                        <img src="img/img_per_3.png"></img>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <section class="slider" style="">
+        <div class="imgbox">
+            <ul style="width: 100%">
+                <li>
+                    <img src="img/img_per_0.jpg"></img>
+                </li>
+                <li>
+                    <img src="img/img_per_1.png"></img>
+                </li>
+                <li>
+                    <img src="img/img_per_2.png"></img>
+                </li>
+                <li>
+                    <img src="img/img_per_3.png"></img>
+                </li>
+            </ul>
+        </div>
     </section>
     <!--信息-->
     <div class="top">
@@ -93,18 +77,18 @@
         <div id="Tab1">
             <div class="Menubox">
                 <ul>
-                    <li><a href="#">个人销售榜</a></li>
-                    <li style="width:33.33333333333%;"><a href="#"> 团队销售榜</a></li>
-                    <li class="menubox_1"><a href="#"> 人气排行榜</a></li>
+                    <li><a href="ranking.html">个人销售榜</a></li>
+                    <li style="width:33.33333333333%;"><a href="ranking_1.html">团队销售榜</a></li>
+                    <li><a href="#" class="Menubox_1">人气排行榜</a> </li>
 
                 </ul>
             </div>
             <div class="Contentbox">
                 <div style="display:none" class="con_one_1_0">
-                    本榜单以活动期间每个参与活动的微媒店铺业绩进行排名。
+                    本榜单以活动期间每个参加活动的微媒，其直属团队的业绩进行排名。
                 </div>
-                <div style="display:none" class="con_one_1_0">本榜单以活动期间每个参加活动的微媒，其直属团队的业绩进行排名。</div>
                 <div class="con_one_1_0">本榜单以活动期间每个参加活动的微媒，其直属团队的业绩进行排名。</div>
+                <div style="display:none"class="con_one_1_0">本榜单以活动期间每个参加活动的微媒，其直属团队的业绩进行排名。</div>
 
             </div>
         </div>
@@ -183,6 +167,8 @@
                 $('#page').text(ind+1);
             }
         });
+        //自适应宽度
+        $(".imgbox ul li").css('width', $(".imgbox").css("width"));
     });
 </script>
 </html>

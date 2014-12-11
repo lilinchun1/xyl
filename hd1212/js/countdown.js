@@ -7,7 +7,23 @@ $(function(){
 function countDown(time,id){
     var surplusTime=parseInt($("#surplusTime").val());
     if(surplusTime==-1){
-        $("#welcome").attr("style","display:block");
+        //$("#welcome").attr("style","display:block");
+        $('.clock li').addClass("clock_hui");
+        $('.countdown-tt').attr("style","display:none");//红的隐藏
+        $('.countdown-hui').attr("style","display:block");//灰的显示
+        $('.countdown-hui h2').text("活动于12月12日0点开始，敬请期待");
+        $(".pay-btn").attr("style","background:#cccccc");
+        $(".pay-btn").attr("value","time_false");
+        return false;
+    }
+    if(surplusTime==0){
+        $('.clock li').addClass("clock_hui");
+        $('.countdown-tt').attr("style","display:none");//红的隐藏
+        $('.countdown-hui').attr("style","display:block");//灰的显示
+        $('.countdown-hui h2').text("活动已经结束");
+        $(".pay-btn").attr("style","background:#cccccc");
+        $(".pay-btn").attr("value","time_end");
+        return false;
     }
     var day_elem = $(id).find('.day');
     var hour_elem = $(id).find('.hour');
